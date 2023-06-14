@@ -63,8 +63,8 @@ public class ProfilePicture extends javax.swing.JPanel {
         btnChooseFile.setText("Choose a File");
         add(btnChooseFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 190, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/readme/profile-icon-png-910.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, 370));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/profile-icon-png-910.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, 260, 370));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUploadActionPerformed
