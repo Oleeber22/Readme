@@ -1,3 +1,10 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -34,7 +41,7 @@ public class LogIn extends javax.swing.JPanel {
         txtPassword_LogIn = new javax.swing.JPasswordField();
         lblPassword = new javax.swing.JLabel();
         txtUsername_LogIn = new javax.swing.JTextField();
-        btnSignUp = new javax.swing.JButton();
+        btnSignIn = new javax.swing.JButton();
         imgIcon_LogIn = new javax.swing.JLabel();
         chckbxRememberMe = new javax.swing.JCheckBox();
         lblEmail_LogIn = new javax.swing.JLabel();
@@ -69,7 +76,6 @@ public class LogIn extends javax.swing.JPanel {
         add(lblUsername_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
 
         txtEmail_LogIn.setBackground(new java.awt.Color(248, 250, 252));
-        txtEmail_LogIn.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtEmail_LogIn.setForeground(new java.awt.Color(127, 126, 126));
         txtEmail_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtEmail_LogIn.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +86,6 @@ public class LogIn extends javax.swing.JPanel {
         add(txtEmail_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 280, 30));
 
         txtPassword_LogIn.setBackground(new java.awt.Color(248, 250, 252));
-        txtPassword_LogIn.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtPassword_LogIn.setForeground(new java.awt.Color(127, 127, 127));
         txtPassword_LogIn.setText("jPasswordField1");
         txtPassword_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
@@ -96,7 +101,6 @@ public class LogIn extends javax.swing.JPanel {
         add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
 
         txtUsername_LogIn.setBackground(new java.awt.Color(248, 250, 252));
-        txtUsername_LogIn.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtUsername_LogIn.setForeground(new java.awt.Color(127, 126, 126));
         txtUsername_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtUsername_LogIn.addActionListener(new java.awt.event.ActionListener() {
@@ -106,17 +110,17 @@ public class LogIn extends javax.swing.JPanel {
         });
         add(txtUsername_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 280, 30));
 
-        btnSignUp.setBackground(new java.awt.Color(51, 102, 255));
-        btnSignUp.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        btnSignUp.setForeground(new java.awt.Color(255, 255, 255));
-        btnSignUp.setText("Sign In");
-        btnSignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 1, true));
-        btnSignUp.addActionListener(new java.awt.event.ActionListener() {
+        btnSignIn.setBackground(new java.awt.Color(51, 102, 255));
+        btnSignIn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        btnSignIn.setForeground(new java.awt.Color(255, 255, 255));
+        btnSignIn.setText("Sign In");
+        btnSignIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 1, true));
+        btnSignIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSignUpActionPerformed(evt);
+                btnSignInActionPerformed(evt);
             }
         });
-        add(btnSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 130, 40));
+        add(btnSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 130, 40));
 
         imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
         imgIcon_LogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -166,9 +170,32 @@ public class LogIn extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsername_LogInActionPerformed
 
-    private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSignUpActionPerformed
+    private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
+       try{
+           Class.forName("com.mysql.cj.jdbc.Driver");
+           Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb");
+           String sql = "Select * from readmedb where username=? and password=?";
+           PreparedStatement pst = con.prepareStatement(sql);
+           pst.setString(1,txtUsername_LogIn.getText());
+           pst.setString(2,txtPassword_LogIn.getText());
+           ResultSet rs = pst.executeQuery();
+           
+           if(rs.next()){
+               JOptionPane.showMessageDialog(null, "Username and Password Matched");
+               Dashboard dash = new Dashboard();
+               dash.setVisible(true);
+               setVisible(false);
+           }
+           else{
+               JOptionPane.showMessageDialog(null, "Username and Password Do Not Matched");
+               txtUsername_LogIn.setText("");
+               txtPassword_LogIn.setText("");
+           }
+       }
+       catch(Exception e){
+           System.err.println("Connection error: " + e.getMessage());
+       }       
+    }//GEN-LAST:event_btnSignInActionPerformed
 
     private void chckbxRememberMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chckbxRememberMeActionPerformed
         // TODO add your handling code here:
@@ -180,7 +207,7 @@ public class LogIn extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSignUp;
+    private javax.swing.JButton btnSignIn;
     private javax.swing.JCheckBox chckbxRememberMe;
     private javax.swing.JLabel iconEmailAddress;
     private javax.swing.JLabel iconLogo;
