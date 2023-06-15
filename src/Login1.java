@@ -37,14 +37,12 @@ public class Login1 extends javax.swing.JFrame {
         txtCreateFreeAccount = new javax.swing.JLabel();
         lblWelcome_LogIn = new javax.swing.JLabel();
         lblUsername_LogIn = new javax.swing.JLabel();
-        txtEmail_LogIn = new javax.swing.JTextField();
         txtPassword_LogIn = new javax.swing.JPasswordField();
         lblPassword = new javax.swing.JLabel();
         txtUsername_LogIn = new javax.swing.JTextField();
         btnSignIn = new javax.swing.JButton();
         imgIcon_LogIn = new javax.swing.JLabel();
         chckbxRememberMe = new javax.swing.JCheckBox();
-        lblEmail_LogIn = new javax.swing.JLabel();
         iconLogo = new javax.swing.JLabel();
         txtDontHaveAnAccount = new javax.swing.JLabel();
         txtForgotPassword = new javax.swing.JLabel();
@@ -66,7 +64,7 @@ public class Login1 extends javax.swing.JFrame {
         txtCreateFreeAccount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtCreateFreeAccount.setForeground(new java.awt.Color(37, 99, 235));
         txtCreateFreeAccount.setText("Create free account");
-        jPanel1.add(txtCreateFreeAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 660, -1, 20));
+        jPanel1.add(txtCreateFreeAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 590, -1, 20));
 
         lblWelcome_LogIn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblWelcome_LogIn.setForeground(new java.awt.Color(82, 82, 91));
@@ -76,16 +74,6 @@ public class Login1 extends javax.swing.JFrame {
         lblUsername_LogIn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblUsername_LogIn.setText("Username");
         jPanel1.add(lblUsername_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
-
-        txtEmail_LogIn.setBackground(new java.awt.Color(248, 250, 252));
-        txtEmail_LogIn.setForeground(new java.awt.Color(127, 126, 126));
-        txtEmail_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
-        txtEmail_LogIn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmail_LogInActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtEmail_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 280, 30));
 
         txtPassword_LogIn.setBackground(new java.awt.Color(248, 250, 252));
         txtPassword_LogIn.setForeground(new java.awt.Color(127, 127, 127));
@@ -122,7 +110,7 @@ public class Login1 extends javax.swing.JFrame {
                 btnSignInActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 130, 40));
+        jPanel1.add(btnSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 130, 40));
 
         imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
         imgIcon_LogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -135,11 +123,7 @@ public class Login1 extends javax.swing.JFrame {
                 chckbxRememberMeActionPerformed(evt);
             }
         });
-        jPanel1.add(chckbxRememberMe, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, -1, -1));
-
-        lblEmail_LogIn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        lblEmail_LogIn.setText("Email Address");
-        jPanel1.add(lblEmail_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
+        jPanel1.add(chckbxRememberMe, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
 
         iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logo-01 1.png"))); // NOI18N
         jPanel1.add(iconLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 130, 130));
@@ -147,12 +131,12 @@ public class Login1 extends javax.swing.JFrame {
         txtDontHaveAnAccount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtDontHaveAnAccount.setForeground(new java.awt.Color(82, 82, 91));
         txtDontHaveAnAccount.setText("Don't have an account?");
-        jPanel1.add(txtDontHaveAnAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 660, -1, -1));
+        jPanel1.add(txtDontHaveAnAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, -1, -1));
 
         txtForgotPassword.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtForgotPassword.setForeground(new java.awt.Color(37, 99, 235));
         txtForgotPassword.setText("Forgot Password?");
-        jPanel1.add(txtForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, -1, 20));
+        jPanel1.add(txtForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, -1, 20));
         jPanel1.add(iconUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 20, 40));
         jPanel1.add(iconEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 20, 40));
         jPanel1.add(iconPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 20, 40));
@@ -161,29 +145,21 @@ public class Login1 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1058, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1058, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1058, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 767, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 767, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 767, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtEmail_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmail_LogInActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmail_LogInActionPerformed
 
     private void txtPassword_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassword_LogInActionPerformed
         // TODO add your handling code here:
@@ -197,11 +173,11 @@ public class Login1 extends javax.swing.JFrame {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb","root","");
-            String sql = "Select * from user where username=? and password=? and Email=?";
+            String sql = "Select * from user where username=? and password=? and email=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1,txtUsername_LogIn.getText());
             pst.setString(2,txtPassword_LogIn.getText());
-            pst.setString(2,txtEmail_LogIn.getText());
+            pst.setString(3,txtEmail_LogIn.getText());
             
             ResultSet rs = pst.executeQuery();
 
@@ -213,9 +189,8 @@ public class Login1 extends javax.swing.JFrame {
             }
             else{
                 JOptionPane.showMessageDialog(null, "Username and Password Do Not Matched");
-                txtUsername_LogIn.setText("");
-                txtPassword_LogIn.setText("");
-                txtEmail_LogIn.setText("");
+
+                
             }
         }
         catch(Exception e){
@@ -271,14 +246,12 @@ public class Login1 extends javax.swing.JFrame {
     private javax.swing.JLabel iconUsername;
     private javax.swing.JLabel imgIcon_LogIn;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblEmail_LogIn;
     private javax.swing.JLabel lblLogIn;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblUsername_LogIn;
     private javax.swing.JLabel lblWelcome_LogIn;
     private javax.swing.JLabel txtCreateFreeAccount;
     private javax.swing.JLabel txtDontHaveAnAccount;
-    private javax.swing.JTextField txtEmail_LogIn;
     private javax.swing.JLabel txtForgotPassword;
     private javax.swing.JPasswordField txtPassword_LogIn;
     private javax.swing.JTextField txtUsername_LogIn;
