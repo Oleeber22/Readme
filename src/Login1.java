@@ -196,11 +196,13 @@ public class Login1 extends javax.swing.JFrame {
     private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb");
-            String sql = "Select * from readmedb where username=? and password=?";
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb","root","");
+            String sql = "Select * from user where username=? and password=? and Email=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1,txtUsername_LogIn.getText());
             pst.setString(2,txtPassword_LogIn.getText());
+            pst.setString(2,txtEmail_LogIn.getText());
+            
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
@@ -213,6 +215,7 @@ public class Login1 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Username and Password Do Not Matched");
                 txtUsername_LogIn.setText("");
                 txtPassword_LogIn.setText("");
+                txtEmail_LogIn.setText("");
             }
         }
         catch(Exception e){
