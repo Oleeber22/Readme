@@ -163,6 +163,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtUsername_LogIn">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fc" green="fa" red="f8" type="rgb"/>
             </Property>
