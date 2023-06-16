@@ -95,6 +95,7 @@ public class Login extends javax.swing.JFrame {
         lblPassword.setText("Password");
         jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
 
+        txtUsername_LogIn.setEditable(false);
         txtUsername_LogIn.setBackground(new java.awt.Color(248, 250, 252));
         txtUsername_LogIn.setForeground(new java.awt.Color(127, 126, 126));
         txtUsername_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));

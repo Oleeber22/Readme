@@ -647,7 +647,7 @@ public class Dashboard extends javax.swing.JFrame {
         );
         pnlBookFeaturedLayout.setVerticalGroup(
             pnlBookFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 145, Short.MAX_VALUE)
+            .addGap(0, 158, Short.MAX_VALUE)
         );
 
         lblFeaturedBookTitle.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -667,6 +667,11 @@ public class Dashboard extends javax.swing.JFrame {
         btnRead1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         btnRead1.setForeground(new java.awt.Color(255, 255, 255));
         btnRead1.setText("Read Now");
+        btnRead1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRead1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlFeaturedLayout = new javax.swing.GroupLayout(pnlFeatured);
         pnlFeatured.setLayout(pnlFeaturedLayout);
@@ -689,6 +694,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(pnlFeaturedLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlBookFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlFeaturedLayout.createSequentialGroup()
                         .addComponent(lblDidYouRead)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -698,9 +704,8 @@ public class Dashboard extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnRead, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnRead1))
-                    .addComponent(pnlBookFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(34, Short.MAX_VALUE))
+                        .addComponent(btnRead1)))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pnlRight.add(pnlFeatured, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 56, 320, -1));
@@ -727,7 +732,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblCommunity.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlCommunity.add(lblCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 20, 223, 280));
 
-        pnlRight.add(pnlCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 255, 320, 350));
+        pnlRight.add(pnlCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 285, 320, 320));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(196, 196, 196), 1, true));
@@ -808,6 +813,10 @@ public class Dashboard extends javax.swing.JFrame {
     private void txtSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchActionPerformed
+
+    private void btnRead1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRead1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRead1ActionPerformed
 
     /**
      * @param args the command line arguments
