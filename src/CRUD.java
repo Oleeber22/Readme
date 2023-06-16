@@ -54,7 +54,7 @@ public class CRUD {
             con = DriverManager.getConnection(url, username, password);
             stmt = con.prepareStatement(sql);
             rs = stmt.executeQuery();
-            ((javax.swing.JTable) dgv).setModel(buildTableModel(rs));
+            //((javax.swing.JTable) dgv).setModel(buildTableModel(rs));
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
