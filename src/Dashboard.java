@@ -27,7 +27,16 @@ public class Dashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlLeft = new javax.swing.JPanel();
+        iconLogo = new javax.swing.JLabel();
+        iconLogo1 = new javax.swing.JLabel();
+        iconLogo2 = new javax.swing.JLabel();
+        iconLogo3 = new javax.swing.JLabel();
+        iconLogo4 = new javax.swing.JLabel();
+        iconLogo5 = new javax.swing.JLabel();
+        iconLogo10 = new javax.swing.JLabel();
+        iconLogo11 = new javax.swing.JLabel();
         pnlCenter = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
         btnFilter = new javax.swing.JButton();
         pnlQuotation = new javax.swing.JPanel();
@@ -37,90 +46,195 @@ public class Dashboard extends javax.swing.JFrame {
         lblPersonQuoted = new javax.swing.JLabel();
         pnlReco = new javax.swing.JPanel();
         lblRecommended = new javax.swing.JLabel();
-        pnlBookPreview = new javax.swing.JPanel();
-        lblBookTitle = new javax.swing.JLabel();
-        lblAuthor = new javax.swing.JLabel();
-        btnBorrow = new javax.swing.JButton();
         btnViewMore = new javax.swing.JButton();
+        pnlBookPreview3 = new javax.swing.JPanel();
+        lblBookTitle3 = new javax.swing.JLabel();
+        lblAuthor3 = new javax.swing.JLabel();
+        btnBorrow3 = new javax.swing.JButton();
+        pnlBookFeatured4 = new javax.swing.JPanel();
+        btnBorrow6 = new javax.swing.JButton();
+        pnlBookPreview6 = new javax.swing.JPanel();
+        lblBookTitle6 = new javax.swing.JLabel();
+        lblAuthor6 = new javax.swing.JLabel();
+        btnBorrow4 = new javax.swing.JButton();
+        pnlBookFeatured6 = new javax.swing.JPanel();
+        btnBorrow12 = new javax.swing.JButton();
+        pnlBookPreview7 = new javax.swing.JPanel();
+        lblBookTitle7 = new javax.swing.JLabel();
+        lblAuthor7 = new javax.swing.JLabel();
+        btnBorrow13 = new javax.swing.JButton();
+        pnlBookFeatured7 = new javax.swing.JPanel();
+        btnBorrow14 = new javax.swing.JButton();
+        pnlBookPreview8 = new javax.swing.JPanel();
+        lblBookTitle8 = new javax.swing.JLabel();
+        lblAuthor8 = new javax.swing.JLabel();
+        btnBorrow15 = new javax.swing.JButton();
+        pnlBookFeatured8 = new javax.swing.JPanel();
+        btnBorrow16 = new javax.swing.JButton();
         pnlAuthor = new javax.swing.JPanel();
+        iconLogo6 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         pnlBorrower = new javax.swing.JPanel();
+        iconLogo7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         pnlPublisher = new javax.swing.JPanel();
+        iconLogo8 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         pnlRight = new javax.swing.JPanel();
-        pnlUser = new javax.swing.JPanel();
-        lblUsername = new javax.swing.JLabel();
         pnlFeatured = new javax.swing.JPanel();
         lblDidYouRead = new javax.swing.JLabel();
         pnlBookFeatured = new javax.swing.JPanel();
         lblFeaturedBookTitle = new javax.swing.JLabel();
         lblFeaturedBookAuthor = new javax.swing.JLabel();
         btnRead = new javax.swing.JButton();
+        lblFeaturedBookAuthor1 = new javax.swing.JLabel();
         pnlCommunity = new javax.swing.JPanel();
-        lblCommunity = new javax.swing.JLabel();
         btnJoin = new javax.swing.JButton();
+        lblCommunity = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        iconLogo9 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        pnlUser1 = new javax.swing.JPanel();
+        lblUsername2 = new javax.swing.JLabel();
+        lblUsername3 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        lblUsername4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1024, 728));
         setPreferredSize(new java.awt.Dimension(1024, 728));
         setSize(new java.awt.Dimension(1024, 728));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlLeft.setBackground(new java.awt.Color(255, 255, 255));
         pnlLeft.setToolTipText("leftPanel");
         pnlLeft.setName("pnlLeft"); // NOI18N
 
+        iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Dashboard.png"))); // NOI18N
+
+        iconLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logo-01 1 (1).png"))); // NOI18N
+
+        iconLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Settings.png"))); // NOI18N
+
+        iconLogo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rating.png"))); // NOI18N
+
+        iconLogo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Statistic.png"))); // NOI18N
+
+        iconLogo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Friends (1).png"))); // NOI18N
+
+        iconLogo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logout.png"))); // NOI18N
+
+        iconLogo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vector 16.png"))); // NOI18N
+
         javax.swing.GroupLayout pnlLeftLayout = new javax.swing.GroupLayout(pnlLeft);
         pnlLeft.setLayout(pnlLeftLayout);
         pnlLeftLayout.setHorizontalGroup(
             pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 72, Short.MAX_VALUE)
+            .addGroup(pnlLeftLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(iconLogo10)
+                    .addComponent(iconLogo5)
+                    .addComponent(iconLogo3)
+                    .addComponent(iconLogo4)
+                    .addComponent(iconLogo)
+                    .addComponent(iconLogo2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(iconLogo11))
+            .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlLeftLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(iconLogo1)
+                    .addContainerGap(18, Short.MAX_VALUE)))
         );
         pnlLeftLayout.setVerticalGroup(
             pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pnlLeftLayout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(iconLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(iconLogo11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addComponent(iconLogo4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(iconLogo3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(iconLogo5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(iconLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
+                .addComponent(iconLogo10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+            .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlLeftLayout.createSequentialGroup()
+                    .addGap(16, 16, 16)
+                    .addComponent(iconLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(645, Short.MAX_VALUE)))
         );
 
-        txtSearch.setText("Search");
+        getContentPane().add(pnlLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        btnFilter.setText("jButton1");
+        pnlCenter.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group (1).png"))); // NOI18N
+        pnlCenter.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
+        txtSearch.setForeground(new java.awt.Color(153, 153, 153));
+        txtSearch.setText("        Search for anything here");
+        txtSearch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(242, 242, 242)));
+        txtSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSearchActionPerformed(evt);
+            }
+        });
+        pnlCenter.add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 14, 780, 30));
+
+        btnFilter.setBackground(new java.awt.Color(196, 196, 196));
+        btnFilter.setForeground(new java.awt.Color(212, 212, 212));
+        btnFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group.png"))); // NOI18N
         btnFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFilterActionPerformed(evt);
             }
         });
+        pnlCenter.add(btnFilter, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 14, 40, 30));
 
         pnlQuotation.setBackground(new java.awt.Color(204, 204, 204));
 
-        lblQuoteOfTheDay.setText("jLabel3");
+        pnlQuoteOfTheDay.setBackground(new java.awt.Color(180, 180, 180));
+
+        lblQuoteOfTheDay.setForeground(new java.awt.Color(255, 255, 255));
+        lblQuoteOfTheDay.setText("Quote Today");
 
         javax.swing.GroupLayout pnlQuoteOfTheDayLayout = new javax.swing.GroupLayout(pnlQuoteOfTheDay);
         pnlQuoteOfTheDay.setLayout(pnlQuoteOfTheDayLayout);
         pnlQuoteOfTheDayLayout.setHorizontalGroup(
             pnlQuoteOfTheDayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlQuoteOfTheDayLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
+                .addGap(16, 16, 16)
                 .addComponent(lblQuoteOfTheDay)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         pnlQuoteOfTheDayLayout.setVerticalGroup(
             pnlQuoteOfTheDayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlQuoteOfTheDayLayout.createSequentialGroup()
-                .addContainerGap(7, Short.MAX_VALUE)
+            .addGroup(pnlQuoteOfTheDayLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(lblQuoteOfTheDay)
-                .addContainerGap())
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
-        lblQuote.setText("jLabel1");
+        lblQuote.setText("Quote");
 
-        lblPersonQuoted.setText("jLabel2");
+        lblPersonQuoted.setForeground(new java.awt.Color(153, 153, 153));
+        lblPersonQuoted.setText("By");
 
         javax.swing.GroupLayout pnlQuotationLayout = new javax.swing.GroupLayout(pnlQuotation);
         pnlQuotation.setLayout(pnlQuotationLayout);
@@ -130,9 +244,9 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(pnlQuotationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblPersonQuoted)
-                    .addComponent(pnlQuoteOfTheDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblQuote, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                    .addComponent(lblQuote, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlQuoteOfTheDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
         pnlQuotationLayout.setVerticalGroup(
             pnlQuotationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,397 +256,506 @@ public class Dashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblQuote, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblPersonQuoted)
+                .addComponent(lblPersonQuoted, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
+        pnlCenter.add(pnlQuotation, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 60, 820, -1));
+
+        pnlReco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblRecommended.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblRecommended.setForeground(new java.awt.Color(51, 51, 51));
         lblRecommended.setText("Recommended Books");
+        pnlReco.add(lblRecommended, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
-        pnlBookPreview.setBackground(new java.awt.Color(255, 255, 255));
+        btnViewMore.setBackground(new java.awt.Color(242, 242, 242));
+        btnViewMore.setForeground(new java.awt.Color(212, 212, 212));
+        btnViewMore.setText("View More >");
+        btnViewMore.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 242, 242), 1, true));
+        btnViewMore.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewMoreActionPerformed(evt);
+            }
+        });
+        pnlReco.add(btnViewMore, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 110, -1));
 
-        lblBookTitle.setText("Book Title");
+        pnlBookPreview3.setBackground(new java.awt.Color(255, 255, 255));
 
-        lblAuthor.setText("Author");
+        lblBookTitle3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblBookTitle3.setText("Book Title");
 
-        btnBorrow.setText("Borrow");
+        lblAuthor3.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor3.setForeground(new java.awt.Color(153, 153, 153));
+        lblAuthor3.setText("Author");
 
-        javax.swing.GroupLayout pnlBookPreviewLayout = new javax.swing.GroupLayout(pnlBookPreview);
-        pnlBookPreview.setLayout(pnlBookPreviewLayout);
-        pnlBookPreviewLayout.setHorizontalGroup(
-            pnlBookPreviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlBookPreviewLayout.createSequentialGroup()
-                .addGroup(pnlBookPreviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlBookPreviewLayout.createSequentialGroup()
+        btnBorrow3.setText("Borrow");
+
+        pnlBookFeatured4.setBackground(new java.awt.Color(196, 196, 196));
+        pnlBookFeatured4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        pnlBookFeatured4.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout pnlBookFeatured4Layout = new javax.swing.GroupLayout(pnlBookFeatured4);
+        pnlBookFeatured4.setLayout(pnlBookFeatured4Layout);
+        pnlBookFeatured4Layout.setHorizontalGroup(
+            pnlBookFeatured4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 161, Short.MAX_VALUE)
+        );
+        pnlBookFeatured4Layout.setVerticalGroup(
+            pnlBookFeatured4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 168, Short.MAX_VALUE)
+        );
+
+        btnBorrow6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+
+        javax.swing.GroupLayout pnlBookPreview3Layout = new javax.swing.GroupLayout(pnlBookPreview3);
+        pnlBookPreview3.setLayout(pnlBookPreview3Layout);
+        pnlBookPreview3Layout.setHorizontalGroup(
+            pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBookPreview3Layout.createSequentialGroup()
+                .addGroup(pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBookPreview3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(pnlBookPreviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblBookTitle)
-                            .addComponent(lblAuthor)))
-                    .addGroup(pnlBookPreviewLayout.createSequentialGroup()
+                        .addGroup(pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBookTitle3)
+                            .addComponent(lblAuthor3)))
+                    .addGroup(pnlBookPreview3Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(btnBorrow)))
-                .addContainerGap(36, Short.MAX_VALUE))
-        );
-        pnlBookPreviewLayout.setVerticalGroup(
-            pnlBookPreviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreviewLayout.createSequentialGroup()
-                .addContainerGap(119, Short.MAX_VALUE)
-                .addComponent(lblBookTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblAuthor)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnBorrow)
-                .addGap(12, 12, 12))
-        );
-
-        btnViewMore.setText("View More");
-
-        javax.swing.GroupLayout pnlRecoLayout = new javax.swing.GroupLayout(pnlReco);
-        pnlReco.setLayout(pnlRecoLayout);
-        pnlRecoLayout.setHorizontalGroup(
-            pnlRecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlRecoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblRecommended)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 357, Short.MAX_VALUE)
-                .addComponent(btnViewMore)
-                .addContainerGap())
-            .addGroup(pnlRecoLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(pnlBookPreview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnBorrow3))
+                    .addComponent(btnBorrow6, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
-        pnlRecoLayout.setVerticalGroup(
-            pnlRecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlRecoLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addGroup(pnlRecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRecommended)
-                    .addComponent(btnViewMore))
-                .addGap(25, 25, 25)
-                .addComponent(pnlBookPreview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+        pnlBookPreview3Layout.setVerticalGroup(
+            pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview3Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblBookTitle3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAuthor3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow6)
+                .addGap(10, 10, 10))
         );
+
+        pnlReco.add(pnlBookPreview3, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 39, -1, -1));
+
+        pnlBookPreview6.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblBookTitle6.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblBookTitle6.setText("Book Title");
+
+        lblAuthor6.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor6.setForeground(new java.awt.Color(153, 153, 153));
+        lblAuthor6.setText("Author");
+
+        btnBorrow4.setText("Borrow");
+
+        pnlBookFeatured6.setBackground(new java.awt.Color(196, 196, 196));
+        pnlBookFeatured6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        pnlBookFeatured6.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout pnlBookFeatured6Layout = new javax.swing.GroupLayout(pnlBookFeatured6);
+        pnlBookFeatured6.setLayout(pnlBookFeatured6Layout);
+        pnlBookFeatured6Layout.setHorizontalGroup(
+            pnlBookFeatured6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 161, Short.MAX_VALUE)
+        );
+        pnlBookFeatured6Layout.setVerticalGroup(
+            pnlBookFeatured6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 168, Short.MAX_VALUE)
+        );
+
+        btnBorrow12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+
+        javax.swing.GroupLayout pnlBookPreview6Layout = new javax.swing.GroupLayout(pnlBookPreview6);
+        pnlBookPreview6.setLayout(pnlBookPreview6Layout);
+        pnlBookPreview6Layout.setHorizontalGroup(
+            pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBookPreview6Layout.createSequentialGroup()
+                .addGroup(pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBookPreview6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBookTitle6)
+                            .addComponent(lblAuthor6)))
+                    .addGroup(pnlBookPreview6Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(btnBorrow4))
+                    .addComponent(btnBorrow12, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        pnlBookPreview6Layout.setVerticalGroup(
+            pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview6Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblBookTitle6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAuthor6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow12)
+                .addGap(10, 10, 10))
+        );
+
+        pnlReco.add(pnlBookPreview6, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 39, -1, -1));
+
+        pnlBookPreview7.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblBookTitle7.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblBookTitle7.setText("Book Title");
+
+        lblAuthor7.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor7.setForeground(new java.awt.Color(153, 153, 153));
+        lblAuthor7.setText("Author");
+
+        btnBorrow13.setText("Borrow");
+
+        pnlBookFeatured7.setBackground(new java.awt.Color(196, 196, 196));
+        pnlBookFeatured7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        pnlBookFeatured7.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout pnlBookFeatured7Layout = new javax.swing.GroupLayout(pnlBookFeatured7);
+        pnlBookFeatured7.setLayout(pnlBookFeatured7Layout);
+        pnlBookFeatured7Layout.setHorizontalGroup(
+            pnlBookFeatured7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 161, Short.MAX_VALUE)
+        );
+        pnlBookFeatured7Layout.setVerticalGroup(
+            pnlBookFeatured7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 168, Short.MAX_VALUE)
+        );
+
+        btnBorrow14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+
+        javax.swing.GroupLayout pnlBookPreview7Layout = new javax.swing.GroupLayout(pnlBookPreview7);
+        pnlBookPreview7.setLayout(pnlBookPreview7Layout);
+        pnlBookPreview7Layout.setHorizontalGroup(
+            pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBookPreview7Layout.createSequentialGroup()
+                .addGroup(pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBookPreview7Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBookTitle7)
+                            .addComponent(lblAuthor7)))
+                    .addGroup(pnlBookPreview7Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(btnBorrow13))
+                    .addComponent(btnBorrow14, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        pnlBookPreview7Layout.setVerticalGroup(
+            pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblBookTitle7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAuthor7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow14)
+                .addGap(10, 10, 10))
+        );
+
+        pnlReco.add(pnlBookPreview7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 39, -1, -1));
+
+        pnlBookPreview8.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblBookTitle8.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblBookTitle8.setText("Book Title");
+
+        lblAuthor8.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor8.setForeground(new java.awt.Color(153, 153, 153));
+        lblAuthor8.setText("Author");
+
+        btnBorrow15.setText("Borrow");
+
+        pnlBookFeatured8.setBackground(new java.awt.Color(196, 196, 196));
+        pnlBookFeatured8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        pnlBookFeatured8.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout pnlBookFeatured8Layout = new javax.swing.GroupLayout(pnlBookFeatured8);
+        pnlBookFeatured8.setLayout(pnlBookFeatured8Layout);
+        pnlBookFeatured8Layout.setHorizontalGroup(
+            pnlBookFeatured8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 161, Short.MAX_VALUE)
+        );
+        pnlBookFeatured8Layout.setVerticalGroup(
+            pnlBookFeatured8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 168, Short.MAX_VALUE)
+        );
+
+        btnBorrow16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+
+        javax.swing.GroupLayout pnlBookPreview8Layout = new javax.swing.GroupLayout(pnlBookPreview8);
+        pnlBookPreview8.setLayout(pnlBookPreview8Layout);
+        pnlBookPreview8Layout.setHorizontalGroup(
+            pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBookPreview8Layout.createSequentialGroup()
+                .addGroup(pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBookPreview8Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBookTitle8)
+                            .addComponent(lblAuthor8)))
+                    .addGroup(pnlBookPreview8Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(btnBorrow15))
+                    .addComponent(btnBorrow16, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview8Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        pnlBookPreview8Layout.setVerticalGroup(
+            pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview8Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblBookTitle8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAuthor8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrow16)
+                .addGap(10, 10, 10))
+        );
+
+        pnlReco.add(pnlBookPreview8, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 39, -1, -1));
+
+        pnlCenter.add(pnlReco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 256, -1, -1));
 
         pnlAuthor.setBackground(new java.awt.Color(255, 255, 255));
+        pnlAuthor.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        iconLogo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frame.png"))); // NOI18N
+        pnlAuthor.add(iconLogo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, 40));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
         jLabel13.setText("jLabel10");
         jLabel13.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel13.setPreferredSize(new java.awt.Dimension(56, 56));
+        pnlAuthor.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        jLabel10.setText("jLabel4");
+        jLabel10.setText("No. of Authors");
+        pnlAuthor.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
-        jLabel14.setText("jLabel5");
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel14.setText("Book Authors");
+        pnlAuthor.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
-        javax.swing.GroupLayout pnlAuthorLayout = new javax.swing.GroupLayout(pnlAuthor);
-        pnlAuthor.setLayout(pnlAuthorLayout);
-        pnlAuthorLayout.setHorizontalGroup(
-            pnlAuthorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAuthorLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnlAuthorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel10))
-                .addContainerGap(70, Short.MAX_VALUE))
-        );
-        pnlAuthorLayout.setVerticalGroup(
-            pnlAuthorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAuthorLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(pnlAuthorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlAuthorLayout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel14)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        pnlCenter.add(pnlAuthor, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 629, 260, 84));
 
         pnlBorrower.setBackground(new java.awt.Color(255, 255, 255));
         pnlBorrower.setPreferredSize(new java.awt.Dimension(214, 84));
+        pnlBorrower.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setText("jLabel5");
+        iconLogo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Reader.png"))); // NOI18N
+        pnlBorrower.add(iconLogo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 20, 30, 40));
 
-        jLabel7.setText("jLabel4");
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel6.setText("Book Readers");
+        pnlBorrower.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
+        jLabel7.setText("No. of Readers");
+        pnlBorrower.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
         jLabel11.setText("jLabel10");
         jLabel11.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel11.setPreferredSize(new java.awt.Dimension(56, 56));
+        pnlBorrower.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 14, -1, -1));
 
-        javax.swing.GroupLayout pnlBorrowerLayout = new javax.swing.GroupLayout(pnlBorrower);
-        pnlBorrower.setLayout(pnlBorrowerLayout);
-        pnlBorrowerLayout.setHorizontalGroup(
-            pnlBorrowerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlBorrowerLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnlBorrowerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
-                .addContainerGap(81, Short.MAX_VALUE))
-        );
-        pnlBorrowerLayout.setVerticalGroup(
-            pnlBorrowerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlBorrowerLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(pnlBorrowerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlBorrowerLayout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel6)))
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
+        pnlCenter.add(pnlBorrower, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 630, 260, -1));
 
         pnlPublisher.setBackground(new java.awt.Color(255, 255, 255));
         pnlPublisher.setPreferredSize(new java.awt.Dimension(214, 84));
+        pnlPublisher.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setText("jLabel5");
+        iconLogo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1688.png"))); // NOI18N
+        pnlPublisher.add(iconLogo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 30, 40));
 
-        jLabel9.setText("jLabel4");
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setText("Book Sharer");
+        pnlPublisher.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
+        jLabel9.setText("No. of Sharer");
+        pnlPublisher.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
         jLabel12.setText("jLabel10");
         jLabel12.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel12.setPreferredSize(new java.awt.Dimension(56, 56));
+        pnlPublisher.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 14, -1, -1));
 
-        javax.swing.GroupLayout pnlPublisherLayout = new javax.swing.GroupLayout(pnlPublisher);
-        pnlPublisher.setLayout(pnlPublisherLayout);
-        pnlPublisherLayout.setHorizontalGroup(
-            pnlPublisherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPublisherLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnlPublisherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9))
-                .addContainerGap(81, Short.MAX_VALUE))
-        );
-        pnlPublisherLayout.setVerticalGroup(
-            pnlPublisherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPublisherLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(pnlPublisherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlPublisherLayout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel8)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        pnlCenter.add(pnlPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 630, 260, 84));
 
-        javax.swing.GroupLayout pnlCenterLayout = new javax.swing.GroupLayout(pnlCenter);
-        pnlCenter.setLayout(pnlCenterLayout);
-        pnlCenterLayout.setHorizontalGroup(
-            pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCenterLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlCenterLayout.createSequentialGroup()
-                        .addComponent(pnlAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(pnlBorrower, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pnlPublisher, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35))
-                    .addGroup(pnlCenterLayout.createSequentialGroup()
-                        .addGroup(pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pnlQuotation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(pnlCenterLayout.createSequentialGroup()
-                                .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(pnlCenterLayout.createSequentialGroup()
-                .addComponent(pnlReco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        pnlCenterLayout.setVerticalGroup(
-            pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCenterLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnFilter))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlQuotation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlReco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pnlCenterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnlBorrower, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPublisher, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlAuthor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
+        getContentPane().add(pnlCenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 0, 830, -1));
 
-        pnlRight.setBackground(new java.awt.Color(255, 255, 204));
+        pnlRight.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlUser.setBackground(new java.awt.Color(255, 255, 255));
+        pnlFeatured.setBackground(new java.awt.Color(255, 255, 255));
 
-        lblUsername.setText("jLabel4");
+        lblDidYouRead.setText("Did you read");
 
-        javax.swing.GroupLayout pnlUserLayout = new javax.swing.GroupLayout(pnlUser);
-        pnlUser.setLayout(pnlUserLayout);
-        pnlUserLayout.setHorizontalGroup(
-            pnlUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlUserLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(lblUsername)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        pnlUserLayout.setVerticalGroup(
-            pnlUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlUserLayout.createSequentialGroup()
-                .addGap(0, 9, Short.MAX_VALUE)
-                .addComponent(lblUsername))
-        );
-
-        lblDidYouRead.setText("jLabel5");
-
-        pnlBookFeatured.setBackground(new java.awt.Color(255, 255, 255));
+        pnlBookFeatured.setBackground(new java.awt.Color(196, 196, 196));
+        pnlBookFeatured.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        pnlBookFeatured.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout pnlBookFeaturedLayout = new javax.swing.GroupLayout(pnlBookFeatured);
         pnlBookFeatured.setLayout(pnlBookFeaturedLayout);
         pnlBookFeaturedLayout.setHorizontalGroup(
             pnlBookFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 147, Short.MAX_VALUE)
         );
         pnlBookFeaturedLayout.setVerticalGroup(
             pnlBookFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 145, Short.MAX_VALUE)
         );
 
-        lblFeaturedBookTitle.setText("jLabel15");
+        lblFeaturedBookTitle.setText("Book Title");
 
-        lblFeaturedBookAuthor.setText("jLabel16");
+        lblFeaturedBookAuthor.setText("by Author");
 
-        btnRead.setText("jButton1");
+        btnRead.setBackground(new java.awt.Color(196, 196, 196));
+        btnRead.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        btnRead.setForeground(new java.awt.Color(255, 255, 255));
+        btnRead.setText("Read Now");
+
+        lblFeaturedBookAuthor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rate.png"))); // NOI18N
 
         javax.swing.GroupLayout pnlFeaturedLayout = new javax.swing.GroupLayout(pnlFeatured);
         pnlFeatured.setLayout(pnlFeaturedLayout);
         pnlFeaturedLayout.setHorizontalGroup(
             pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFeaturedLayout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+                .addGap(21, 21, 21)
                 .addComponent(pnlBookFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlFeaturedLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblDidYouRead)
-                            .addComponent(lblFeaturedBookTitle)
-                            .addComponent(lblFeaturedBookAuthor)))
-                    .addGroup(pnlFeaturedLayout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(btnRead)))
-                .addGap(30, 30, 30))
+                    .addComponent(btnRead)
+                    .addComponent(lblDidYouRead)
+                    .addComponent(lblFeaturedBookTitle)
+                    .addComponent(lblFeaturedBookAuthor)
+                    .addComponent(lblFeaturedBookAuthor1))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         pnlFeaturedLayout.setVerticalGroup(
             pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlFeaturedLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlFeaturedLayout.createSequentialGroup()
                         .addComponent(lblDidYouRead)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblFeaturedBookTitle)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblFeaturedBookAuthor)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblFeaturedBookAuthor1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnRead))
                     .addComponent(pnlBookFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        lblCommunity.setText("jLabel17");
+        pnlRight.add(pnlFeatured, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 56, 320, -1));
+
+        pnlCommunity.setBackground(new java.awt.Color(196, 196, 196));
+        pnlCommunity.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(196, 196, 196), 1, true));
+        pnlCommunity.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnJoin.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        btnJoin.setForeground(new java.awt.Color(180, 180, 180));
+        btnJoin.setText("Join Now");
+        btnJoin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJoinActionPerformed(evt);
+            }
+        });
+        pnlCommunity.add(btnJoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, -1, -1));
+
+        lblCommunity.setBackground(new java.awt.Color(196, 196, 196));
+        lblCommunity.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblCommunity.setForeground(new java.awt.Color(255, 255, 255));
+        lblCommunity.setText("<html> Join a community of over  <br>  5000 Book Lovers  <br> here now");
+        lblCommunity.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lblCommunity.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        pnlCommunity.add(lblCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 20, 223, 280));
 
-        btnJoin.setText("jButton2");
+        pnlRight.add(pnlCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 255, 320, 350));
 
-        javax.swing.GroupLayout pnlCommunityLayout = new javax.swing.GroupLayout(pnlCommunity);
-        pnlCommunity.setLayout(pnlCommunityLayout);
-        pnlCommunityLayout.setHorizontalGroup(
-            pnlCommunityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCommunityLayout.createSequentialGroup()
-                .addGroup(pnlCommunityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlCommunityLayout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(lblCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlCommunityLayout.createSequentialGroup()
-                        .addGap(86, 86, 86)
-                        .addComponent(btnJoin)))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-        pnlCommunityLayout.setVerticalGroup(
-            pnlCommunityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlCommunityLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(lblCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(btnJoin)
-                .addGap(15, 15, 15))
-        );
-
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(196, 196, 196), 1, true));
         jPanel5.setPreferredSize(new java.awt.Dimension(84, 84));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 85, Short.MAX_VALUE)
-        );
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setText("Subscribe now to our blog");
+        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
-        javax.swing.GroupLayout pnlRightLayout = new javax.swing.GroupLayout(pnlRight);
-        pnlRight.setLayout(pnlRightLayout);
-        pnlRightLayout.setHorizontalGroup(
-            pnlRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlRightLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(pnlRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnlFeatured, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlCommunity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        pnlRightLayout.setVerticalGroup(
-            pnlRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlRightLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(pnlUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        iconLogo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1683.png"))); // NOI18N
+        jPanel5.add(iconLogo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(pnlLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlCenter, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlRight, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlRight, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlLeft, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnlCenter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rectangle 769.png"))); // NOI18N
+        jLabel15.setMinimumSize(new java.awt.Dimension(56, 56));
+        jLabel15.setPreferredSize(new java.awt.Dimension(56, 56));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 70, -1));
+
+        pnlRight.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 320, 80));
+
+        pnlUser1.setBackground(new java.awt.Color(255, 255, 255));
+        pnlUser1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblUsername2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 14.png"))); // NOI18N
+        pnlUser1.add(lblUsername2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 30, 30));
+
+        lblUsername3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vector.png"))); // NOI18N
+        pnlUser1.add(lblUsername3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 20, 30));
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Notification.png"))); // NOI18N
+        jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 242, 242), 1, true));
+        pnlUser1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 30));
+
+        lblUsername4.setForeground(new java.awt.Color(51, 51, 51));
+        lblUsername4.setText("User Profile");
+        pnlUser1.add(lblUsername4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 160, 30));
+
+        pnlRight.add(pnlUser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 14, 320, -1));
+
+        getContentPane().add(pnlRight, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, -1, 728));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -540,6 +763,18 @@ public class Dashboard extends javax.swing.JFrame {
     private void btnFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFilterActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnFilterActionPerformed
+
+    private void btnJoinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJoinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnJoinActionPerformed
+
+    private void btnViewMoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewMoreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnViewMoreActionPerformed
+
+    private void txtSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSearchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -580,35 +815,79 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBorrow;
+    private javax.swing.JButton btnBorrow10;
+    private javax.swing.JButton btnBorrow11;
+    private javax.swing.JButton btnBorrow12;
+    private javax.swing.JButton btnBorrow13;
+    private javax.swing.JButton btnBorrow14;
+    private javax.swing.JButton btnBorrow15;
+    private javax.swing.JButton btnBorrow16;
+    private javax.swing.JButton btnBorrow3;
+    private javax.swing.JButton btnBorrow4;
+    private javax.swing.JButton btnBorrow6;
     private javax.swing.JButton btnFilter;
     private javax.swing.JButton btnJoin;
     private javax.swing.JButton btnRead;
     private javax.swing.JButton btnViewMore;
+    private javax.swing.JLabel iconLogo;
+    private javax.swing.JLabel iconLogo1;
+    private javax.swing.JLabel iconLogo10;
+    private javax.swing.JLabel iconLogo11;
+    private javax.swing.JLabel iconLogo2;
+    private javax.swing.JLabel iconLogo3;
+    private javax.swing.JLabel iconLogo4;
+    private javax.swing.JLabel iconLogo5;
+    private javax.swing.JLabel iconLogo6;
+    private javax.swing.JLabel iconLogo7;
+    private javax.swing.JLabel iconLogo8;
+    private javax.swing.JLabel iconLogo9;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JLabel lblAuthor;
-    private javax.swing.JLabel lblBookTitle;
+    private javax.swing.JLabel lblAuthor3;
+    private javax.swing.JLabel lblAuthor5;
+    private javax.swing.JLabel lblAuthor6;
+    private javax.swing.JLabel lblAuthor7;
+    private javax.swing.JLabel lblAuthor8;
+    private javax.swing.JLabel lblBookTitle3;
+    private javax.swing.JLabel lblBookTitle5;
+    private javax.swing.JLabel lblBookTitle6;
+    private javax.swing.JLabel lblBookTitle7;
+    private javax.swing.JLabel lblBookTitle8;
     private javax.swing.JLabel lblCommunity;
     private javax.swing.JLabel lblDidYouRead;
     private javax.swing.JLabel lblFeaturedBookAuthor;
+    private javax.swing.JLabel lblFeaturedBookAuthor1;
     private javax.swing.JLabel lblFeaturedBookTitle;
     private javax.swing.JLabel lblPersonQuoted;
     private javax.swing.JLabel lblQuote;
     private javax.swing.JLabel lblQuoteOfTheDay;
     private javax.swing.JLabel lblRecommended;
-    private javax.swing.JLabel lblUsername;
+    private javax.swing.JLabel lblUsername2;
+    private javax.swing.JLabel lblUsername3;
+    private javax.swing.JLabel lblUsername4;
     private javax.swing.JPanel pnlAuthor;
     private javax.swing.JPanel pnlBookFeatured;
-    private javax.swing.JPanel pnlBookPreview;
+    private javax.swing.JPanel pnlBookFeatured4;
+    private javax.swing.JPanel pnlBookFeatured6;
+    private javax.swing.JPanel pnlBookFeatured7;
+    private javax.swing.JPanel pnlBookFeatured8;
+    private javax.swing.JPanel pnlBookPreview3;
+    private javax.swing.JPanel pnlBookPreview5;
+    private javax.swing.JPanel pnlBookPreview6;
+    private javax.swing.JPanel pnlBookPreview7;
+    private javax.swing.JPanel pnlBookPreview8;
     private javax.swing.JPanel pnlBorrower;
     private javax.swing.JPanel pnlCenter;
     private javax.swing.JPanel pnlCommunity;
@@ -619,7 +898,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel pnlQuoteOfTheDay;
     private javax.swing.JPanel pnlReco;
     private javax.swing.JPanel pnlRight;
-    private javax.swing.JPanel pnlUser;
+    private javax.swing.JPanel pnlUser1;
     private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }

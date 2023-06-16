@@ -150,9 +150,9 @@ public class SignUp_2 extends javax.swing.JPanel {
         });
         add(btnSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 710, 130, 40));
 
-        imgIcon_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
+        imgIcon_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        add(imgIcon_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 700, 660));
+        add(imgIcon_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 700, 660));
 
         txtCity.setBackground(new java.awt.Color(248, 250, 252));
         txtCity.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N

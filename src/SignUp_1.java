@@ -157,9 +157,9 @@ public class SignUp_1 extends javax.swing.JPanel {
         });
         add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 710, 130, 40));
 
-        imgIcon_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
+        imgIcon_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        add(imgIcon_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 700, 660));
+        add(imgIcon_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 700, 660));
 
         lblContactNumber.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblContactNumber.setText("Contact Number");

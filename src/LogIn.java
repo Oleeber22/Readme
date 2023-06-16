@@ -122,9 +122,9 @@ public class LogIn extends javax.swing.JPanel {
         });
         add(btnSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 130, 40));
 
-        imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
+        imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_LogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        add(imgIcon_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 700, 660));
+        add(imgIcon_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 700, 660));
 
         chckbxRememberMe.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         chckbxRememberMe.setText("Remember me");
