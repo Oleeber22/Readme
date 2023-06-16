@@ -69,7 +69,7 @@ public class Signup extends javax.swing.JFrame {
         lblFullAddress = new javax.swing.JLabel();
         txtFullAddress = new javax.swing.JTextField();
         imgIcon_2 = new javax.swing.JLabel();
-        dateBday = new com.toedter.calendar.JDateChooser();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,7 +97,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtEmail_SignUp.setBackground(new java.awt.Color(248, 250, 252));
         txtEmail_SignUp.setForeground(new java.awt.Color(127, 126, 126));
-        txtEmail_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtEmail_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtEmail_SignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmail_SignUpActionPerformed(evt);
@@ -108,7 +108,7 @@ public class Signup extends javax.swing.JFrame {
         txtPassword_SignUp.setBackground(new java.awt.Color(248, 250, 252));
         txtPassword_SignUp.setForeground(new java.awt.Color(127, 127, 127));
         txtPassword_SignUp.setText("jPasswordField1");
-        txtPassword_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtPassword_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         jPanel2.add(txtPassword_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 280, 30));
 
         lblPassword_SignUp.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -117,7 +117,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtUsername_SignUp.setBackground(new java.awt.Color(248, 250, 252));
         txtUsername_SignUp.setForeground(new java.awt.Color(127, 126, 126));
-        txtUsername_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtUsername_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtUsername_SignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsername_SignUpActionPerformed(evt);
@@ -131,7 +131,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtFirstName.setBackground(new java.awt.Color(248, 250, 252));
         txtFirstName.setForeground(new java.awt.Color(127, 126, 126));
-        txtFirstName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtFirstName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtFirstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFirstNameActionPerformed(evt);
@@ -145,7 +145,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtMiddleName.setBackground(new java.awt.Color(248, 250, 252));
         txtMiddleName.setForeground(new java.awt.Color(127, 126, 126));
-        txtMiddleName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtMiddleName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtMiddleName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMiddleNameActionPerformed(evt);
@@ -159,7 +159,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtLastName.setBackground(new java.awt.Color(248, 250, 252));
         txtLastName.setForeground(new java.awt.Color(127, 126, 126));
-        txtLastName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtLastName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtLastName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLastNameActionPerformed(evt);
@@ -185,7 +185,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtContactNumber.setBackground(new java.awt.Color(248, 250, 252));
         txtContactNumber.setForeground(new java.awt.Color(127, 126, 126));
-        txtContactNumber.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtContactNumber.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtContactNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtContactNumberActionPerformed(evt);
@@ -199,7 +199,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtAge.setBackground(new java.awt.Color(248, 250, 252));
         txtAge.setForeground(new java.awt.Color(127, 126, 126));
-        txtAge.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtAge.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtAge.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAgeActionPerformed(evt);
@@ -217,7 +217,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtGender.setBackground(new java.awt.Color(248, 250, 252));
         txtGender.setForeground(new java.awt.Color(127, 126, 126));
-        txtGender.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtGender.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtGender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtGenderActionPerformed(evt);
@@ -231,7 +231,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtBarangay.setBackground(new java.awt.Color(248, 250, 252));
         txtBarangay.setForeground(new java.awt.Color(127, 126, 126));
-        txtBarangay.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtBarangay.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtBarangay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBarangayActionPerformed(evt);
@@ -245,7 +245,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtProvince.setBackground(new java.awt.Color(248, 250, 252));
         txtProvince.setForeground(new java.awt.Color(127, 126, 126));
-        txtProvince.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtProvince.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtProvince.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtProvinceActionPerformed(evt);
@@ -259,7 +259,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtCity.setBackground(new java.awt.Color(248, 250, 252));
         txtCity.setForeground(new java.awt.Color(127, 126, 126));
-        txtCity.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtCity.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtCity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCityActionPerformed(evt);
@@ -273,7 +273,7 @@ public class Signup extends javax.swing.JFrame {
 
         txtFullAddress.setBackground(new java.awt.Color(248, 250, 252));
         txtFullAddress.setForeground(new java.awt.Color(127, 126, 126));
-        txtFullAddress.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
+        txtFullAddress.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
         txtFullAddress.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFullAddressActionPerformed(evt);
@@ -284,7 +284,7 @@ public class Signup extends javax.swing.JFrame {
         imgIcon_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(imgIcon_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 120, 460, 510));
-        jPanel2.add(dateBday, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 280, -1));
+        jPanel2.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 280, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -444,8 +444,8 @@ public class Signup extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNext;
-    private com.toedter.calendar.JDateChooser dateBday;
     private javax.swing.JLabel imgIcon_2;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblAge;
     private javax.swing.JLabel lblBarangay;
