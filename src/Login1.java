@@ -173,11 +173,10 @@ public class Login1 extends javax.swing.JFrame {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb","root","");
-            String sql = "Select * from user where username=? and password=? and email=?";
+            String sql = "Select * from user where username=? and password=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1,txtUsername_LogIn.getText());
             pst.setString(2,txtPassword_LogIn.getText());
-            pst.setString(3,txtEmail_LogIn.getText());
             
             ResultSet rs = pst.executeQuery();
 
