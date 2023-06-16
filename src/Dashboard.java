@@ -64,6 +64,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblAuthor7 = new javax.swing.JLabel();
         pnlBookFeatured7 = new javax.swing.JPanel();
         btnBorrow14 = new javax.swing.JButton();
+        btnBorrow13 = new javax.swing.JButton();
         pnlBookPreview8 = new javax.swing.JPanel();
         lblBookTitle8 = new javax.swing.JLabel();
         lblAuthor8 = new javax.swing.JLabel();
@@ -85,7 +86,6 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        btnBorrow13 = new javax.swing.JButton();
         pnlRight = new javax.swing.JPanel();
         pnlFeatured = new javax.swing.JPanel();
         lblDidYouRead = new javax.swing.JLabel();
@@ -93,14 +93,14 @@ public class Dashboard extends javax.swing.JFrame {
         lblFeaturedBookTitle = new javax.swing.JLabel();
         lblFeaturedBookAuthor = new javax.swing.JLabel();
         btnRead = new javax.swing.JButton();
-        lblFeaturedBookAuthor1 = new javax.swing.JLabel();
+        btnRead1 = new javax.swing.JButton();
         pnlCommunity = new javax.swing.JPanel();
         btnJoin = new javax.swing.JButton();
         lblCommunity = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        iconLogo9 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         pnlUser1 = new javax.swing.JPanel();
         lblUsername2 = new javax.swing.JLabel();
         lblUsername3 = new javax.swing.JLabel();
@@ -110,23 +110,26 @@ public class Dashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1024, 728));
         setSize(new java.awt.Dimension(1024, 728));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlLeft.setBackground(new java.awt.Color(255, 255, 255));
         pnlLeft.setToolTipText("leftPanel");
         pnlLeft.setName("pnlLeft"); // NOI18N
 
-        iconLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logo-01 1 (1).png"))); // NOI18N
+        iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Dashboard1.png"))); // NOI18N
 
-        iconLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Settings.png"))); // NOI18N
+        iconLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Logo-01 2.png"))); // NOI18N
 
-        iconLogo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rating.png"))); // NOI18N
+        iconLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group_1.png"))); // NOI18N
 
-        iconLogo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Statistic.png"))); // NOI18N
+        iconLogo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Vector (1).png"))); // NOI18N
 
-        iconLogo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logout.png"))); // NOI18N
+        iconLogo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group 1698.png"))); // NOI18N
 
-        iconLogo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vector 16.png"))); // NOI18N
+        iconLogo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Friends.png"))); // NOI18N
+
+        iconLogo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Logout.png"))); // NOI18N
+
+        iconLogo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Vector 16.png"))); // NOI18N
 
         javax.swing.GroupLayout pnlLeftLayout = new javax.swing.GroupLayout(pnlLeft);
         pnlLeft.setLayout(pnlLeftLayout);
@@ -135,28 +138,34 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(pnlLeftLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(iconLogo10)
-                    .addComponent(iconLogo5)
-                    .addComponent(iconLogo3)
-                    .addComponent(iconLogo4)
                     .addComponent(iconLogo)
-                    .addComponent(iconLogo2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                    .addComponent(iconLogo4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
                 .addComponent(iconLogo11))
-            .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLeftLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(iconLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                 .addGroup(pnlLeftLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(iconLogo1)
-                    .addContainerGap(18, Short.MAX_VALUE)))
+                    .addComponent(iconLogo3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlLeftLayout.createSequentialGroup()
+                    .addGap(24, 24, 24)
+                    .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(iconLogo5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(iconLogo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(iconLogo10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         pnlLeftLayout.setVerticalGroup(
             pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLeftLayout.createSequentialGroup()
-                .addGap(124, 124, 124)
+                .addGap(16, 16, 16)
+                .addComponent(iconLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
                 .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(iconLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(iconLogo11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                    .addComponent(iconLogo11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(iconLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(iconLogo4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(iconLogo3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -164,23 +173,16 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(iconLogo5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(iconLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(iconLogo10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-            .addGroup(pnlLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnlLeftLayout.createSequentialGroup()
-                    .addGap(16, 16, 16)
-                    .addComponent(iconLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(645, Short.MAX_VALUE)))
+                .addGap(31, 31, 31))
         );
-
-        getContentPane().add(pnlLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pnlCenter.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group (1).png"))); // NOI18N
-        pnlCenter.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group (1).png"))); // NOI18N
+        pnlCenter.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 30, 40));
 
         txtSearch.setForeground(new java.awt.Color(153, 153, 153));
         txtSearch.setText("        Search for anything here");
@@ -194,7 +196,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         btnFilter.setBackground(new java.awt.Color(196, 196, 196));
         btnFilter.setForeground(new java.awt.Color(212, 212, 212));
-        btnFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group.png"))); // NOI18N
+        btnFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group.png"))); // NOI18N
         btnFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFilterActionPerformed(evt);
@@ -265,6 +267,7 @@ public class Dashboard extends javax.swing.JFrame {
         pnlReco.add(lblRecommended, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         btnViewMore.setBackground(new java.awt.Color(242, 242, 242));
+        btnViewMore.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         btnViewMore.setForeground(new java.awt.Color(212, 212, 212));
         btnViewMore.setText("View More >");
         btnViewMore.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 242, 242), 1, true));
@@ -281,6 +284,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblBookTitle3.setText("Book Title");
 
         lblAuthor3.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblAuthor3.setForeground(new java.awt.Color(153, 153, 153));
         lblAuthor3.setText("Author");
 
@@ -301,7 +305,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 168, Short.MAX_VALUE)
         );
 
-        btnBorrow6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Bar.png"))); // NOI18N
         btnBorrow6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         javax.swing.GroupLayout pnlBookPreview3Layout = new javax.swing.GroupLayout(pnlBookPreview3);
@@ -315,15 +319,17 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblBookTitle3)
                             .addComponent(lblAuthor3)))
-                    .addGroup(pnlBookPreview3Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(btnBorrow3))
                     .addComponent(btnBorrow6, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pnlBookFeatured4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addGroup(pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview3Layout.createSequentialGroup()
+                        .addComponent(pnlBookFeatured4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview3Layout.createSequentialGroup()
+                        .addComponent(btnBorrow3)
+                        .addGap(49, 49, 49))))
         );
         pnlBookPreview3Layout.setVerticalGroup(
             pnlBookPreview3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -336,7 +342,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(lblAuthor3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnBorrow3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBorrow6)
                 .addGap(10, 10, 10))
         );
@@ -349,6 +355,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblBookTitle6.setText("Book Title");
 
         lblAuthor6.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor6.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblAuthor6.setForeground(new java.awt.Color(153, 153, 153));
         lblAuthor6.setText("Author");
 
@@ -369,13 +376,17 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 168, Short.MAX_VALUE)
         );
 
-        btnBorrow12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Bar.png"))); // NOI18N
         btnBorrow12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         javax.swing.GroupLayout pnlBookPreview6Layout = new javax.swing.GroupLayout(pnlBookPreview6);
         pnlBookPreview6.setLayout(pnlBookPreview6Layout);
         pnlBookPreview6Layout.setHorizontalGroup(
             pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
             .addGroup(pnlBookPreview6Layout.createSequentialGroup()
                 .addGroup(pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBookPreview6Layout.createSequentialGroup()
@@ -383,20 +394,16 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblBookTitle6)
                             .addComponent(lblAuthor6)))
+                    .addComponent(btnBorrow12, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlBookPreview6Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(btnBorrow4))
-                    .addComponent(btnBorrow12, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(46, 46, 46)
+                        .addComponent(btnBorrow4)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview6Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pnlBookFeatured6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
         );
         pnlBookPreview6Layout.setVerticalGroup(
             pnlBookPreview6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview6Layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
+                .addContainerGap(21, Short.MAX_VALUE)
                 .addComponent(pnlBookFeatured6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblBookTitle6)
@@ -404,12 +411,12 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(lblAuthor6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnBorrow4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBorrow12)
                 .addGap(10, 10, 10))
         );
 
-        pnlReco.add(pnlBookPreview6, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 39, -1, -1));
+        pnlReco.add(pnlBookPreview6, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 39, -1, 310));
 
         pnlBookPreview7.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -417,6 +424,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblBookTitle7.setText("Book Title");
 
         lblAuthor7.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor7.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblAuthor7.setForeground(new java.awt.Color(153, 153, 153));
         lblAuthor7.setText("Author");
 
@@ -432,16 +440,22 @@ public class Dashboard extends javax.swing.JFrame {
         );
         pnlBookFeatured7Layout.setVerticalGroup(
             pnlBookFeatured7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 168, Short.MAX_VALUE)
+            .addGap(0, 171, Short.MAX_VALUE)
         );
 
-        btnBorrow14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Bar.png"))); // NOI18N
         btnBorrow14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+
+        btnBorrow13.setText("Borrow");
 
         javax.swing.GroupLayout pnlBookPreview7Layout = new javax.swing.GroupLayout(pnlBookPreview7);
         pnlBookPreview7.setLayout(pnlBookPreview7Layout);
         pnlBookPreview7Layout.setHorizontalGroup(
             pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
             .addGroup(pnlBookPreview7Layout.createSequentialGroup()
                 .addGroup(pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBookPreview7Layout.createSequentialGroup()
@@ -449,28 +463,29 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblBookTitle7)
                             .addComponent(lblAuthor7)))
-                    .addComponent(btnBorrow14, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBorrow14, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnlBookPreview7Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(btnBorrow13)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
         );
         pnlBookPreview7Layout.setVerticalGroup(
             pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
-                .addContainerGap(27, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblBookTitle7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblAuthor7)
-                .addGap(34, 34, 34)
+                .addGap(5, 5, 5)
+                .addComponent(btnBorrow13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBorrow14)
                 .addGap(10, 10, 10))
         );
 
-        pnlReco.add(pnlBookPreview7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 39, -1, -1));
+        pnlReco.add(pnlBookPreview7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 310));
 
         pnlBookPreview8.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -478,6 +493,7 @@ public class Dashboard extends javax.swing.JFrame {
         lblBookTitle8.setText("Book Title");
 
         lblAuthor8.setBackground(new java.awt.Color(153, 153, 153));
+        lblAuthor8.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblAuthor8.setForeground(new java.awt.Color(153, 153, 153));
         lblAuthor8.setText("Author");
 
@@ -498,13 +514,17 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 168, Short.MAX_VALUE)
         );
 
-        btnBorrow16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bar.png"))); // NOI18N
+        btnBorrow16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Bar.png"))); // NOI18N
         btnBorrow16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         javax.swing.GroupLayout pnlBookPreview8Layout = new javax.swing.GroupLayout(pnlBookPreview8);
         pnlBookPreview8.setLayout(pnlBookPreview8Layout);
         pnlBookPreview8Layout.setHorizontalGroup(
             pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview8Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pnlBookFeatured8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
             .addGroup(pnlBookPreview8Layout.createSequentialGroup()
                 .addGroup(pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBookPreview8Layout.createSequentialGroup()
@@ -512,15 +532,11 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblBookTitle8)
                             .addComponent(lblAuthor8)))
+                    .addComponent(btnBorrow16, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlBookPreview8Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(btnBorrow15))
-                    .addComponent(btnBorrow16, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
+                        .addComponent(btnBorrow15)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview8Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pnlBookFeatured8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
         );
         pnlBookPreview8Layout.setVerticalGroup(
             pnlBookPreview8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -533,7 +549,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(lblAuthor8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnBorrow15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBorrow16)
                 .addGap(10, 10, 10))
         );
@@ -545,15 +561,15 @@ public class Dashboard extends javax.swing.JFrame {
         pnlAuthor.setBackground(new java.awt.Color(255, 255, 255));
         pnlAuthor.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        iconLogo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frame.png"))); // NOI18N
-        pnlAuthor.add(iconLogo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, 40));
+        iconLogo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Frame.png"))); // NOI18N
+        pnlAuthor.add(iconLogo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 20, 40));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
-        jLabel13.setText("jLabel10");
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Ellipse 15.png"))); // NOI18N
         jLabel13.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel13.setPreferredSize(new java.awt.Dimension(56, 56));
         pnlAuthor.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel10.setText("No. of Authors");
         pnlAuthor.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
@@ -568,7 +584,7 @@ public class Dashboard extends javax.swing.JFrame {
         pnlBorrower.setPreferredSize(new java.awt.Dimension(214, 84));
         pnlBorrower.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        iconLogo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Reader.png"))); // NOI18N
+        iconLogo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Reader.png"))); // NOI18N
         pnlBorrower.add(iconLogo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 20, 30, 40));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -576,11 +592,11 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel6.setText("Book Readers");
         pnlBorrower.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel7.setText("No. of Readers");
         pnlBorrower.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
-        jLabel11.setText("jLabel10");
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Ellipse 15.png"))); // NOI18N
         jLabel11.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel11.setPreferredSize(new java.awt.Dimension(56, 56));
         pnlBorrower.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 14, -1, -1));
@@ -591,7 +607,7 @@ public class Dashboard extends javax.swing.JFrame {
         pnlPublisher.setPreferredSize(new java.awt.Dimension(214, 84));
         pnlPublisher.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        iconLogo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1688.png"))); // NOI18N
+        iconLogo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group 1688.png"))); // NOI18N
         pnlPublisher.add(iconLogo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 30, 40));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -599,26 +615,24 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8.setText("Book Sharer");
         pnlPublisher.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel9.setText("No. of Sharer");
         pnlPublisher.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 15.png"))); // NOI18N
-        jLabel12.setText("jLabel10");
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Ellipse 15.png"))); // NOI18N
         jLabel12.setMinimumSize(new java.awt.Dimension(56, 56));
         jLabel12.setPreferredSize(new java.awt.Dimension(56, 56));
         pnlPublisher.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 14, -1, -1));
 
         pnlCenter.add(pnlPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 630, 260, 84));
 
-        btnBorrow13.setText("Borrow");
-        pnlCenter.add(btnBorrow13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, -1, -1));
-
-        getContentPane().add(pnlCenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 0, 830, -1));
-
         pnlRight.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlFeatured.setBackground(new java.awt.Color(255, 255, 255));
 
+        lblDidYouRead.setBackground(new java.awt.Color(153, 153, 153));
+        lblDidYouRead.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblDidYouRead.setForeground(new java.awt.Color(153, 153, 153));
         lblDidYouRead.setText("Did you read");
 
         pnlBookFeatured.setBackground(new java.awt.Color(196, 196, 196));
@@ -636,16 +650,23 @@ public class Dashboard extends javax.swing.JFrame {
             .addGap(0, 145, Short.MAX_VALUE)
         );
 
+        lblFeaturedBookTitle.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblFeaturedBookTitle.setText("Book Title");
 
+        lblFeaturedBookAuthor.setBackground(new java.awt.Color(153, 153, 153));
+        lblFeaturedBookAuthor.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        lblFeaturedBookAuthor.setForeground(new java.awt.Color(153, 153, 153));
         lblFeaturedBookAuthor.setText("by Author");
 
-        btnRead.setBackground(new java.awt.Color(196, 196, 196));
         btnRead.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         btnRead.setForeground(new java.awt.Color(255, 255, 255));
-        btnRead.setText("Read Now");
+        btnRead.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Rate.png"))); // NOI18N
+        btnRead.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
-        lblFeaturedBookAuthor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rate.png"))); // NOI18N
+        btnRead1.setBackground(new java.awt.Color(196, 196, 196));
+        btnRead1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        btnRead1.setForeground(new java.awt.Color(255, 255, 255));
+        btnRead1.setText("Read Now");
 
         javax.swing.GroupLayout pnlFeaturedLayout = new javax.swing.GroupLayout(pnlFeatured);
         pnlFeatured.setLayout(pnlFeaturedLayout);
@@ -660,14 +681,14 @@ public class Dashboard extends javax.swing.JFrame {
                     .addComponent(lblDidYouRead)
                     .addComponent(lblFeaturedBookTitle)
                     .addComponent(lblFeaturedBookAuthor)
-                    .addComponent(lblFeaturedBookAuthor1))
+                    .addComponent(btnRead1))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         pnlFeaturedLayout.setVerticalGroup(
             pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlFeaturedLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlFeaturedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnlFeaturedLayout.createSequentialGroup()
                         .addComponent(lblDidYouRead)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -675,11 +696,11 @@ public class Dashboard extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblFeaturedBookAuthor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblFeaturedBookAuthor1)
+                        .addComponent(btnRead, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnRead))
+                        .addComponent(btnRead1))
                     .addComponent(pnlBookFeatured, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         pnlRight.add(pnlFeatured, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 56, 320, -1));
@@ -713,28 +734,31 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel5.setPreferredSize(new java.awt.Dimension(84, 84));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Group 1683.png"))); // NOI18N
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 70, 70));
+
+        jLabel3.setBackground(new java.awt.Color(196, 196, 196));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Rectangle 775.png"))); // NOI18N
+        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 60, 50));
+
+        jLabel1.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("Subscribe now to our blog");
         jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
-        iconLogo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1683.png"))); // NOI18N
-        jPanel5.add(iconLogo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 50));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rectangle 769.png"))); // NOI18N
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 70, -1));
-
-        pnlRight.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 320, 80));
+        pnlRight.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 320, -1));
 
         pnlUser1.setBackground(new java.awt.Color(255, 255, 255));
         pnlUser1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblUsername2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ellipse 14.png"))); // NOI18N
+        lblUsername2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Ellipse 14.png"))); // NOI18N
         pnlUser1.add(lblUsername2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 30, 30));
 
-        lblUsername3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vector.png"))); // NOI18N
+        lblUsername3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Vector.png"))); // NOI18N
         pnlUser1.add(lblUsername3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 20, 30));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Notification.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Notification.png"))); // NOI18N
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(242, 242, 242), 1, true));
         pnlUser1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 30));
 
@@ -744,7 +768,27 @@ public class Dashboard extends javax.swing.JFrame {
 
         pnlRight.add(pnlUser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 14, 320, -1));
 
-        getContentPane().add(pnlRight, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, -1, 728));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(pnlCenter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(pnlRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlCenter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlRight, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(pnlLeft, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -815,6 +859,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton btnFilter;
     private javax.swing.JButton btnJoin;
     private javax.swing.JButton btnRead;
+    private javax.swing.JButton btnRead1;
     private javax.swing.JButton btnViewMore;
     private javax.swing.JLabel iconLogo;
     private javax.swing.JLabel iconLogo1;
@@ -827,7 +872,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel iconLogo6;
     private javax.swing.JLabel iconLogo7;
     private javax.swing.JLabel iconLogo8;
-    private javax.swing.JLabel iconLogo9;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -837,6 +881,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -853,7 +898,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel lblCommunity;
     private javax.swing.JLabel lblDidYouRead;
     private javax.swing.JLabel lblFeaturedBookAuthor;
-    private javax.swing.JLabel lblFeaturedBookAuthor1;
     private javax.swing.JLabel lblFeaturedBookTitle;
     private javax.swing.JLabel lblPersonQuoted;
     private javax.swing.JLabel lblQuote;

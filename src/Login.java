@@ -122,7 +122,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(btnSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, 130, 40));
 
-        imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
+        imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_LogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(imgIcon_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 740, 720));
         imgIcon_LogIn.getAccessibleContext().setAccessibleDescription("");
@@ -136,7 +136,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(chckbxRememberMe, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, -1, -1));
 
-        iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logo-01 1.png"))); // NOI18N
+        iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Logo-01 1.png"))); // NOI18N
         jPanel1.add(iconLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 130, 130));
 
         txtDontHaveAnAccount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -148,8 +148,12 @@ public class Login extends javax.swing.JFrame {
         txtForgotPassword.setForeground(new java.awt.Color(37, 99, 235));
         txtForgotPassword.setText("Forgot Password?");
         jPanel1.add(txtForgotPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, -1, 20));
+
+        iconUsername.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/icons8-user-16.png"))); // NOI18N
         jPanel1.add(iconUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 20, 40));
         jPanel1.add(iconEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 20, 40));
+
+        iconPassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/icons8-password-16.png"))); // NOI18N
         jPanel1.add(iconPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 20, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
