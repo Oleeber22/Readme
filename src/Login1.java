@@ -64,6 +64,11 @@ public class Login1 extends javax.swing.JFrame {
         txtCreateFreeAccount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtCreateFreeAccount.setForeground(new java.awt.Color(37, 99, 235));
         txtCreateFreeAccount.setText("Create free account");
+        txtCreateFreeAccount.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtCreateFreeAccountMouseClicked(evt);
+            }
+        });
         jPanel1.add(txtCreateFreeAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 590, -1, 20));
 
         lblWelcome_LogIn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -105,6 +110,11 @@ public class Login1 extends javax.swing.JFrame {
         btnSignIn.setForeground(new java.awt.Color(255, 255, 255));
         btnSignIn.setText("Sign In");
         btnSignIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 1, true));
+        btnSignIn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSignInMouseClicked(evt);
+            }
+        });
         btnSignIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSignInActionPerformed(evt);
@@ -115,6 +125,7 @@ public class Login1 extends javax.swing.JFrame {
         imgIcon_LogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1-01 1.png"))); // NOI18N
         imgIcon_LogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(imgIcon_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 700, 660));
+        imgIcon_LogIn.getAccessibleContext().setAccessibleDescription("");
 
         chckbxRememberMe.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         chckbxRememberMe.setText("Remember me");
@@ -183,8 +194,8 @@ public class Login1 extends javax.swing.JFrame {
 
             if(rs.next()){
                 JOptionPane.showMessageDialog(null, "Username and Password Matched");
-                Dashboard dash = new Dashboard();
-                dash.setVisible(true);
+                Dashboard dash1 = new Dashboard();
+                dash1.setVisible(true);
                 setVisible(false);
             }
             else{
@@ -201,6 +212,16 @@ public class Login1 extends javax.swing.JFrame {
     private void chckbxRememberMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chckbxRememberMeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_chckbxRememberMeActionPerformed
+
+    private void txtCreateFreeAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtCreateFreeAccountMouseClicked
+                Signup1 dash = new Signup1();
+                dash.setVisible(true);
+                setVisible(false);
+    }//GEN-LAST:event_txtCreateFreeAccountMouseClicked
+
+    private void btnSignInMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSignInMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSignInMouseClicked
 
     /**
      * @param args the command line arguments

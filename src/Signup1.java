@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,25 +6,14 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+public class Signup1 extends javax.swing.JFrame {
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
-
-
-/**
- *
- * @author florence
- */
-public class SignUp_1 extends javax.swing.JPanel {
-
-    /**
-     * Creates new form SignUp_1
-     */
-    public SignUp_1() {
+  
+    public Signup1() {
         initComponents();
+        Connect();
     }
+
     Connection con;
     PreparedStatement pst;
     ResultSet rs;
@@ -41,10 +29,12 @@ public class SignUp_1 extends javax.swing.JPanel {
             Logger.getLogger(Signup1.class.getName()).log(Level.SEVERE, null, ex);
         }
 }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         lblSignUp_1 = new javax.swing.JLabel();
         lblEmail = new javax.swing.JLabel();
         lblWelcome_1 = new javax.swing.JLabel();
@@ -64,30 +54,31 @@ public class SignUp_1 extends javax.swing.JPanel {
         lblContactNumber = new javax.swing.JLabel();
         txtContactNumber = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(1024, 728));
-        setPreferredSize(new java.awt.Dimension(1024, 728));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setMaximumSize(new java.awt.Dimension(1024, 728));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1024, 728));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblSignUp_1.setFont(new java.awt.Font("Segoe UI", 1, 52)); // NOI18N
         lblSignUp_1.setText("Sign Up");
-        add(lblSignUp_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jPanel2.add(lblSignUp_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         lblEmail.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblEmail.setText("Email");
-        add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, -1, -1));
+        jPanel2.add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, -1, -1));
 
         lblWelcome_1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblWelcome_1.setForeground(new java.awt.Color(82, 82, 91));
         lblWelcome_1.setText("<html>\nWelcome to Readme Library Management\n<br>\nSystem!");
-        add(lblWelcome_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
+        jPanel2.add(lblWelcome_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
         lblUsername_SignUp.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblUsername_SignUp.setText("Username");
-        add(lblUsername_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
+        jPanel2.add(lblUsername_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
 
         txtEmail_SignUp.setBackground(new java.awt.Color(248, 250, 252));
-        txtEmail_SignUp.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtEmail_SignUp.setForeground(new java.awt.Color(127, 126, 126));
         txtEmail_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtEmail_SignUp.addActionListener(new java.awt.event.ActionListener() {
@@ -95,21 +86,19 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtEmail_SignUpActionPerformed(evt);
             }
         });
-        add(txtEmail_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 280, 30));
+        jPanel2.add(txtEmail_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, 280, 30));
 
         txtPassword_SignUp.setBackground(new java.awt.Color(248, 250, 252));
-        txtPassword_SignUp.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtPassword_SignUp.setForeground(new java.awt.Color(127, 127, 127));
         txtPassword_SignUp.setText("jPasswordField1");
         txtPassword_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
-        add(txtPassword_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 280, 30));
+        jPanel2.add(txtPassword_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 280, 30));
 
         lblPassword_SignUp.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblPassword_SignUp.setText("Password");
-        add(lblPassword_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+        jPanel2.add(lblPassword_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
 
         txtUsername_SignUp.setBackground(new java.awt.Color(248, 250, 252));
-        txtUsername_SignUp.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtUsername_SignUp.setForeground(new java.awt.Color(127, 126, 126));
         txtUsername_SignUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtUsername_SignUp.addActionListener(new java.awt.event.ActionListener() {
@@ -117,14 +106,13 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtUsername_SignUpActionPerformed(evt);
             }
         });
-        add(txtUsername_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 280, 30));
+        jPanel2.add(txtUsername_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 280, 30));
 
         lblFirstName.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblFirstName.setText("First Name");
-        add(lblFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
+        jPanel2.add(lblFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
         txtFirstName.setBackground(new java.awt.Color(248, 250, 252));
-        txtFirstName.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtFirstName.setForeground(new java.awt.Color(127, 126, 126));
         txtFirstName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtFirstName.addActionListener(new java.awt.event.ActionListener() {
@@ -132,14 +120,13 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtFirstNameActionPerformed(evt);
             }
         });
-        add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 280, 30));
+        jPanel2.add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 280, 30));
 
         lblMiddleName.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblMiddleName.setText("Middle Name");
-        add(lblMiddleName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, -1, -1));
+        jPanel2.add(lblMiddleName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, -1, -1));
 
         txtMiddleName.setBackground(new java.awt.Color(248, 250, 252));
-        txtMiddleName.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtMiddleName.setForeground(new java.awt.Color(127, 126, 126));
         txtMiddleName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtMiddleName.addActionListener(new java.awt.event.ActionListener() {
@@ -147,14 +134,13 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtMiddleNameActionPerformed(evt);
             }
         });
-        add(txtMiddleName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 280, 30));
+        jPanel2.add(txtMiddleName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 280, 30));
 
         lblLastName.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblLastName.setText("Last Name");
-        add(lblLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, -1, -1));
+        jPanel2.add(lblLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, -1, -1));
 
         txtLastName.setBackground(new java.awt.Color(248, 250, 252));
-        txtLastName.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtLastName.setForeground(new java.awt.Color(127, 126, 126));
         txtLastName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtLastName.addActionListener(new java.awt.event.ActionListener() {
@@ -162,7 +148,7 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtLastNameActionPerformed(evt);
             }
         });
-        add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 280, 30));
+        jPanel2.add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, 280, 30));
 
         btnNext.setBackground(new java.awt.Color(51, 102, 255));
         btnNext.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -174,18 +160,17 @@ public class SignUp_1 extends javax.swing.JPanel {
                 btnNextActionPerformed(evt);
             }
         });
-        add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 710, 130, 40));
+        jPanel2.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 710, 130, 40));
 
         imgIcon_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        add(imgIcon_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 700, 660));
+        jPanel2.add(imgIcon_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 700, 660));
 
         lblContactNumber.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblContactNumber.setText("Contact Number");
-        add(lblContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 650, -1, -1));
+        jPanel2.add(lblContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 650, -1, -1));
 
         txtContactNumber.setBackground(new java.awt.Color(248, 250, 252));
-        txtContactNumber.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         txtContactNumber.setForeground(new java.awt.Color(127, 126, 126));
         txtContactNumber.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
         txtContactNumber.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +178,30 @@ public class SignUp_1 extends javax.swing.JPanel {
                 txtContactNumberActionPerformed(evt);
             }
         });
-        add(txtContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 680, 280, 30));
+        jPanel2.add(txtContactNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 680, 280, 30));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1070, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1058, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 779, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 767, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEmail_SignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmail_SignUpActionPerformed
@@ -217,7 +225,6 @@ public class SignUp_1 extends javax.swing.JPanel {
     }//GEN-LAST:event_txtLastNameActionPerformed
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-       
         String username = txtUsername_SignUp.getText();
         String password = new String(txtPassword_SignUp.getPassword());
         String firstname = txtFirstName.getText();
@@ -225,8 +232,7 @@ public class SignUp_1 extends javax.swing.JPanel {
         String lastname = txtLastName.getText();
         String email = txtEmail_SignUp.getText();
         String ContactNumber = txtContactNumber.getText();
-
-        try {
+         try {
             pst = con.prepareStatement("INSERT INTO user (Username, Password, FirstName, MiddleName, LastName, Email, ContactNumber)VALUES(?,?,?,?,?,?,?)");
             pst.setString(1, username);
             pst.setString(2, password);
@@ -250,17 +256,51 @@ public class SignUp_1 extends javax.swing.JPanel {
         } catch (SQLException ex) {
             Logger.getLogger(SignUp_1.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void txtContactNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContactNumberActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtContactNumberActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Signup1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Signup1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Signup1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Signup1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Signup1().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNext;
     private javax.swing.JLabel imgIcon_1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblContactNumber;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblFirstName;
@@ -276,6 +316,6 @@ public class SignUp_1 extends javax.swing.JPanel {
     private javax.swing.JTextField txtLastName;
     private javax.swing.JTextField txtMiddleName;
     private javax.swing.JPasswordField txtPassword_SignUp;
-    private javax.swing.JTextField txtUsername_SignUp;
+    public javax.swing.JTextField txtUsername_SignUp;
     // End of variables declaration//GEN-END:variables
 }

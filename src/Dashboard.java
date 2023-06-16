@@ -62,7 +62,6 @@ public class Dashboard extends javax.swing.JFrame {
         pnlBookPreview7 = new javax.swing.JPanel();
         lblBookTitle7 = new javax.swing.JLabel();
         lblAuthor7 = new javax.swing.JLabel();
-        btnBorrow13 = new javax.swing.JButton();
         pnlBookFeatured7 = new javax.swing.JPanel();
         btnBorrow14 = new javax.swing.JButton();
         pnlBookPreview8 = new javax.swing.JPanel();
@@ -86,6 +85,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        btnBorrow13 = new javax.swing.JButton();
         pnlRight = new javax.swing.JPanel();
         pnlFeatured = new javax.swing.JPanel();
         lblDidYouRead = new javax.swing.JLabel();
@@ -109,15 +109,12 @@ public class Dashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1024, 728));
-        setPreferredSize(new java.awt.Dimension(1024, 728));
         setSize(new java.awt.Dimension(1024, 728));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlLeft.setBackground(new java.awt.Color(255, 255, 255));
         pnlLeft.setToolTipText("leftPanel");
         pnlLeft.setName("pnlLeft"); // NOI18N
-
-        iconLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Dashboard.png"))); // NOI18N
 
         iconLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logo-01 1 (1).png"))); // NOI18N
 
@@ -126,8 +123,6 @@ public class Dashboard extends javax.swing.JFrame {
         iconLogo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rating.png"))); // NOI18N
 
         iconLogo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Statistic.png"))); // NOI18N
-
-        iconLogo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Friends (1).png"))); // NOI18N
 
         iconLogo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logout.png"))); // NOI18N
 
@@ -425,8 +420,6 @@ public class Dashboard extends javax.swing.JFrame {
         lblAuthor7.setForeground(new java.awt.Color(153, 153, 153));
         lblAuthor7.setText("Author");
 
-        btnBorrow13.setText("Borrow");
-
         pnlBookFeatured7.setBackground(new java.awt.Color(196, 196, 196));
         pnlBookFeatured7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
         pnlBookFeatured7.setForeground(new java.awt.Color(255, 255, 255));
@@ -456,9 +449,6 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGroup(pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblBookTitle7)
                             .addComponent(lblAuthor7)))
-                    .addGroup(pnlBookPreview7Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(btnBorrow13))
                     .addComponent(btnBorrow14, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
@@ -475,9 +465,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(lblBookTitle7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblAuthor7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnBorrow13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(34, 34, 34)
                 .addComponent(btnBorrow14)
                 .addGap(10, 10, 10))
         );
@@ -622,6 +610,9 @@ public class Dashboard extends javax.swing.JFrame {
 
         pnlCenter.add(pnlPublisher, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 630, 260, 84));
 
+        btnBorrow13.setText("Borrow");
+        pnlCenter.add(btnBorrow13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, -1, -1));
+
         getContentPane().add(pnlCenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 0, 830, -1));
 
         pnlRight.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -730,8 +721,6 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel5.add(iconLogo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 50));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rectangle 769.png"))); // NOI18N
-        jLabel15.setMinimumSize(new java.awt.Dimension(56, 56));
-        jLabel15.setPreferredSize(new java.awt.Dimension(56, 56));
         jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 70, -1));
 
         pnlRight.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 320, 80));
@@ -815,8 +804,6 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBorrow10;
-    private javax.swing.JButton btnBorrow11;
     private javax.swing.JButton btnBorrow12;
     private javax.swing.JButton btnBorrow13;
     private javax.swing.JButton btnBorrow14;
@@ -856,12 +843,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JLabel lblAuthor3;
-    private javax.swing.JLabel lblAuthor5;
     private javax.swing.JLabel lblAuthor6;
     private javax.swing.JLabel lblAuthor7;
     private javax.swing.JLabel lblAuthor8;
     private javax.swing.JLabel lblBookTitle3;
-    private javax.swing.JLabel lblBookTitle5;
     private javax.swing.JLabel lblBookTitle6;
     private javax.swing.JLabel lblBookTitle7;
     private javax.swing.JLabel lblBookTitle8;
@@ -884,7 +869,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel pnlBookFeatured7;
     private javax.swing.JPanel pnlBookFeatured8;
     private javax.swing.JPanel pnlBookPreview3;
-    private javax.swing.JPanel pnlBookPreview5;
     private javax.swing.JPanel pnlBookPreview6;
     private javax.swing.JPanel pnlBookPreview7;
     private javax.swing.JPanel pnlBookPreview8;
