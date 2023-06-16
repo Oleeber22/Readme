@@ -198,7 +198,7 @@ public class SignUp_1 extends javax.swing.JPanel {
     }//GEN-LAST:event_txtLastNameActionPerformed
 
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void txtContactNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContactNumberActionPerformed
