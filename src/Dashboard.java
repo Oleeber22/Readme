@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -27,14 +28,19 @@ import javax.swing.ImageIcon;
 public class Dashboard extends javax.swing.JFrame {
 
     public Dashboard () {
-          initComponents();
+        initComponents();
+        String className = "com.mysql.cj.jdbc.Driver";
+        String url = "jdbc:mysql://localhost:3306/readmedb";
+        String user = "root";
+        String password = "";
+        
         Connection con;
         Statement st;
         ResultSet rs;
-         try {
+        try {
             // Register JDBC driver
-           Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb", "root", "");
+            Class.forName(className);
+            con = DriverManager.getConnection(url, user, password);
             st = con.createStatement();
             // Execute a query
             System.out.println("Creating statement...");
@@ -58,9 +64,69 @@ public class Dashboard extends javax.swing.JFrame {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb", "root", "");
+            // Register JDBC driver
+            Class.forName(className);
+            con = DriverManager.getConnection(url, user, password);
+            st = con.createStatement();
+            // Execute a query
+            System.out.println("Creating statement...");
+            st = con.createStatement();
+            String sql = "SELECT COUNT(*) AS total FROM authors";
+            rs = st.executeQuery(sql);
+
+            // Process the result
+            if (rs.next()) {
+                int totalCount = rs.getInt("total");
+                jLabel10.setText("" + totalCount);
+            }
+
+            // Clean up
+            rs.close();
+            st.close();
+            con.close();
+        } catch (SQLException se) {
+            // Handle errors for JDBC
+            se.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        try {
+            // Register JDBC driver
+            Class.forName(className);
+            con = DriverManager.getConnection(url, user, password);
+            st = con.createStatement();
+            // Execute a query
+            System.out.println("Creating statement...");
+            st = con.createStatement();
+            String sql = "SELECT COUNT(*) AS total FROM publisher";
+            rs = st.executeQuery(sql);
+
+            // Process the result
+            if (rs.next()) {
+                int totalCount = rs.getInt("total");
+                jLabel9.setText("" + totalCount);
+            }
+
+            // Clean up
+            rs.close();
+            st.close();
+            con.close();
+        } catch (SQLException se) {
+            // Handle errors for JDBC
+            se.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        try {
+            Class.forName(className);
+            con = DriverManager.getConnection(url, user, password);
             st = con.createStatement();
 
             // Compose the SQL query with multiple labels
@@ -70,23 +136,23 @@ public class Dashboard extends javax.swing.JFrame {
             int count = 1;
             while (rs.next()) {
                String bookTitle = rs.getString("title");
-              byte[] imageData = rs.getBytes("image");
-              
-              ByteArrayInputStream inputStream = new ByteArrayInputStream(imageData);
-                Image image = ImageIO.read(inputStream);
+               byte[] imageData = rs.getBytes(10);
+
+                        ByteArrayInputStream inputStream = new ByteArrayInputStream(imageData);
+                        Image image = ImageIO.read(inputStream);
                 
                 switch (count) {
                 
                     case 1:
                         lblBook1.setText(rs.getString(2));
                         lblAuthor1.setText(rs.getString(3));
-                        jImage1.setIcon(new ImageIcon(image));
+                     //   jImage1.setIcon(new ImageIcon(image));
                         
                         break;
                     case 2:
                         lblBook2.setText(rs.getString(2));
                         lblAuthor2.setText(rs.getString(3));
-                        jImage2.setIcon(new ImageIcon(image));
+                     //   jImage2.setIcon(new ImageIcon(image));
 
                         break;
                         
@@ -115,7 +181,9 @@ public class Dashboard extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
         }
-       
+
+
+
     }
 
     /**
@@ -361,9 +429,12 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(pnlQuotationLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(pnlQuoteOfTheDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblQuote, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+
                 .addComponent(lblPersonQuoted, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
@@ -601,6 +672,8 @@ public class Dashboard extends javax.swing.JFrame {
         pnlBookPreview7Layout.setVerticalGroup(
             pnlBookPreview7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBookPreview7Layout.createSequentialGroup()
+
+
                 .addContainerGap()
                 .addComponent(pnlBookFeatured7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -934,12 +1007,15 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void iconLogo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconLogo10MouseClicked
             Login log = new Login();
-                log.setVisible(true);
-                setVisible(false);
+            log.setVisible(true);
+            setVisible(false);
     }//GEN-LAST:event_iconLogo10MouseClicked
 
     private void btnBorrow13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrow13ActionPerformed
         // TODO add your handling code here:
+        Borrower borrow = new Borrower();
+        borrow.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_btnBorrow13ActionPerformed
 
     /**

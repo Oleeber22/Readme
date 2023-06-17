@@ -455,7 +455,7 @@ public class Borrower extends javax.swing.JFrame {
     }//GEN-LAST:event_btnJoinActionPerformed
 
     private void txt_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usernameActionPerformed
-        // TODO add your handling code here:
+            // TODO add your handling code here:
     }//GEN-LAST:event_txt_usernameActionPerformed
 
     /**
