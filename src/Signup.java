@@ -69,7 +69,7 @@ public class Signup extends javax.swing.JFrame {
         lblFullAddress = new javax.swing.JLabel();
         txtFullAddress = new javax.swing.JTextField();
         imgIcon_2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        dateBday = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -284,7 +284,7 @@ public class Signup extends javax.swing.JFrame {
         imgIcon_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/SignUp_LogIn_Icon.png"))); // NOI18N
         imgIcon_2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(imgIcon_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 120, 460, 510));
-        jPanel2.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 280, -1));
+        jPanel2.add(dateBday, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, 280, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -332,7 +332,20 @@ public class Signup extends javax.swing.JFrame {
     private void txtContactNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContactNumberActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtContactNumberActionPerformed
-
+public int fetchUserID(String username) {
+    String query = "SELECT id FROM user WHERE username = ?";
+    try {
+        pst = con.prepareStatement(query);
+        pst.setString(1, username);
+        rs = pst.executeQuery();
+        if (rs.next()) {
+            return rs.getInt("id");
+        }
+    } catch (SQLException ex) {
+        Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
+    }
+    return -1; // Return -1 if the user ID is not found or an error occurs
+}
     private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
         java.sql.Timestamp date = new java.sql.Timestamp(new java.util.Date().getTime());
 
@@ -384,6 +397,12 @@ public class Signup extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         }
+        int userID = fetchUserID(username);
+    if (userID != -1) {
+        JOptionPane.showMessageDialog(this, "User ID: " + userID, "User ID", JOptionPane.INFORMATION_MESSAGE);
+    } else {
+        JOptionPane.showMessageDialog(this, "User not found", "Error", JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_btnNextActionPerformed
 
     private void txtLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLastNameActionPerformed
@@ -444,8 +463,8 @@ public class Signup extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNext;
+    private com.toedter.calendar.JDateChooser dateBday;
     private javax.swing.JLabel imgIcon_2;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblAge;
     private javax.swing.JLabel lblBarangay;

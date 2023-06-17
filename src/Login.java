@@ -39,7 +39,6 @@ public class Login extends javax.swing.JFrame {
         lblUsername_LogIn = new javax.swing.JLabel();
         txtPassword_LogIn = new javax.swing.JPasswordField();
         lblPassword = new javax.swing.JLabel();
-        txtUsername_LogIn = new javax.swing.JTextField();
         btnSignIn = new javax.swing.JButton();
         imgIcon_LogIn = new javax.swing.JLabel();
         chckbxRememberMe = new javax.swing.JCheckBox();
@@ -49,6 +48,7 @@ public class Login extends javax.swing.JFrame {
         iconUsername = new javax.swing.JLabel();
         iconEmailAddress = new javax.swing.JLabel();
         iconPassword = new javax.swing.JLabel();
+        txtUsername_LogIn = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,17 +94,6 @@ public class Login extends javax.swing.JFrame {
         lblPassword.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         lblPassword.setText("Password");
         jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, -1, -1));
-
-        txtUsername_LogIn.setEditable(false);
-        txtUsername_LogIn.setBackground(new java.awt.Color(248, 250, 252));
-        txtUsername_LogIn.setForeground(new java.awt.Color(127, 126, 126));
-        txtUsername_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(229, 229, 229), 1, true));
-        txtUsername_LogIn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsername_LogInActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtUsername_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 280, 30));
 
         btnSignIn.setBackground(new java.awt.Color(51, 102, 255));
         btnSignIn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -157,6 +146,16 @@ public class Login extends javax.swing.JFrame {
         iconPassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/icons8-password-16.png"))); // NOI18N
         jPanel1.add(iconPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 20, 40));
 
+        txtUsername_LogIn.setBackground(new java.awt.Color(248, 250, 252));
+        txtUsername_LogIn.setForeground(new java.awt.Color(127, 126, 126));
+        txtUsername_LogIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(203, 213, 225), 1, true));
+        txtUsername_LogIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsername_LogInActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtUsername_LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 280, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -180,10 +179,6 @@ public class Login extends javax.swing.JFrame {
     private void txtPassword_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassword_LogInActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPassword_LogInActionPerformed
-
-    private void txtUsername_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsername_LogInActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsername_LogInActionPerformed
 
     private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
         try{
@@ -227,6 +222,10 @@ public class Login extends javax.swing.JFrame {
     private void btnSignInMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSignInMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSignInMouseClicked
+
+    private void txtUsername_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsername_LogInActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsername_LogInActionPerformed
 
     /**
      * @param args the command line arguments
@@ -281,6 +280,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel txtDontHaveAnAccount;
     private javax.swing.JLabel txtForgotPassword;
     private javax.swing.JPasswordField txtPassword_LogIn;
-    private javax.swing.JTextField txtUsername_LogIn;
+    public javax.swing.JTextField txtUsername_LogIn;
     // End of variables declaration//GEN-END:variables
 }

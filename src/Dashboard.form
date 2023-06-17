@@ -168,6 +168,9 @@
               <Image iconType="3" name="/assets/Logout.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="iconLogo10MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="iconLogo11">
           <Properties>
@@ -413,7 +416,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblBookTitle3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBook3" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblAuthor3" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -442,7 +445,7 @@
                           <EmptySpace pref="27" max="32767" attributes="0"/>
                           <Component id="pnlBookFeatured4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblBookTitle3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBook3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="lblAuthor3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -455,7 +458,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblBookTitle3">
+                <Component class="javax.swing.JLabel" name="lblBook3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="15" style="1"/>
@@ -553,8 +556,8 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblBookTitle6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblAuthor6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBook2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAuthor2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="btnBorrow12" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
@@ -570,12 +573,12 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                          <EmptySpace pref="25" max="32767" attributes="0"/>
                           <Component id="pnlBookFeatured6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblBookTitle6" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBook2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblAuthor6" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAuthor2" min="-2" pref="21" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnBorrow4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -586,7 +589,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblBookTitle6">
+                <Component class="javax.swing.JLabel" name="lblBook2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="15" style="1"/>
@@ -594,7 +597,7 @@
                     <Property name="text" type="java.lang.String" value="Book Title"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblAuthor6">
+                <Component class="javax.swing.JLabel" name="lblAuthor2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="99" red="99" type="rgb"/>
@@ -633,15 +636,26 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="161" max="32767" attributes="0"/>
+                          <Component id="jImage2" alignment="0" pref="161" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="168" max="32767" attributes="0"/>
+                          <Component id="jImage2" alignment="0" pref="171" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jImage2">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder/>
+                          </Border>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="javax.swing.JButton" name="btnBorrow12">
                   <Properties>
@@ -684,8 +698,8 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblBookTitle7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblAuthor7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBook1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAuthor1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="btnBorrow14" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
@@ -704,9 +718,9 @@
                           <EmptySpace pref="19" max="32767" attributes="0"/>
                           <Component id="pnlBookFeatured7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblBookTitle7" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBook1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblAuthor7" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAuthor1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           <Component id="btnBorrow13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -717,7 +731,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblBookTitle7">
+                <Component class="javax.swing.JLabel" name="lblBook1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="15" style="1"/>
@@ -725,7 +739,7 @@
                     <Property name="text" type="java.lang.String" value="Book Title"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblAuthor7">
+                <Component class="javax.swing.JLabel" name="lblAuthor1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="99" red="99" type="rgb"/>
@@ -759,15 +773,26 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="161" max="32767" attributes="0"/>
+                          <Component id="jImage1" alignment="0" pref="161" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="171" max="32767" attributes="0"/>
+                          <Component id="jImage1" alignment="0" pref="171" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jImage1">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                            <LineBorder/>
+                          </Border>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="javax.swing.JButton" name="btnBorrow14">
                   <Properties>
@@ -787,6 +812,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Borrow"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrow13ActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -815,8 +843,8 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblBookTitle8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblAuthor8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblBook4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAuthor4" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="btnBorrow16" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
@@ -835,9 +863,9 @@
                           <EmptySpace pref="27" max="32767" attributes="0"/>
                           <Component id="pnlBookFeatured8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblBookTitle8" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBook4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblAuthor8" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAuthor4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnBorrow15" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -848,7 +876,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblBookTitle8">
+                <Component class="javax.swing.JLabel" name="lblBook4">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="15" style="1"/>
@@ -856,7 +884,7 @@
                     <Property name="text" type="java.lang.String" value="Book Title"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblAuthor8">
+                <Component class="javax.swing.JLabel" name="lblAuthor4">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="99" red="99" type="rgb"/>
@@ -955,12 +983,6 @@
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/assets/Ellipse 15.png"/>
-                </Property>
-                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1065,12 +1087,6 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/assets/Ellipse 15.png"/>
                 </Property>
-                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
-                </Property>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1144,12 +1160,6 @@
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/assets/Ellipse 15.png"/>
-                </Property>
-                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[56, 56]"/>
                 </Property>
               </Properties>
               <Constraints>
