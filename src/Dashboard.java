@@ -26,15 +26,38 @@ import javax.swing.ImageIcon;
  */
 public class Dashboard extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CategoryFilter
-     */
-    public Dashboard() {
+    public Dashboard () {
           initComponents();
         Connection con;
         Statement st;
         ResultSet rs;
+         try {
+            // Register JDBC driver
+           Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb", "root", "");
+            st = con.createStatement();
+            // Execute a query
+            System.out.println("Creating statement...");
+            st = con.createStatement();
+            String sql = "SELECT COUNT(*) AS total FROM user";
+            rs = st.executeQuery(sql);
 
+            // Process the result
+            if (rs.next()) {
+                int totalCount = rs.getInt("total");
+                noreaders.setText("" + totalCount);
+            }
+
+            // Clean up
+            rs.close();
+            st.close();
+            con.close();
+        } catch (SQLException se) {
+            // Handle errors for JDBC
+            se.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+        }
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/readmedb", "root", "");
@@ -47,17 +70,23 @@ public class Dashboard extends javax.swing.JFrame {
             int count = 1;
             while (rs.next()) {
                String bookTitle = rs.getString("title");
+              byte[] imageData = rs.getBytes("image");
               
-               
+              ByteArrayInputStream inputStream = new ByteArrayInputStream(imageData);
+                Image image = ImageIO.read(inputStream);
+                
                 switch (count) {
                 
                     case 1:
                         lblBook1.setText(rs.getString(2));
                         lblAuthor1.setText(rs.getString(3));
+                        jImage1.setIcon(new ImageIcon(image));
+                        
                         break;
                     case 2:
                         lblBook2.setText(rs.getString(2));
                         lblAuthor2.setText(rs.getString(3));
+                        jImage2.setIcon(new ImageIcon(image));
 
                         break;
                         
@@ -83,7 +112,10 @@ public class Dashboard extends javax.swing.JFrame {
             System.err.println("Connection error: " + ex.getMessage());
         } catch (SQLException ex) {
             Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Dashboard.class.getName()).log(Level.SEVERE, null, ex);
         }
+       
     }
 
     /**
@@ -150,7 +182,7 @@ public class Dashboard extends javax.swing.JFrame {
         pnlBorrower = new javax.swing.JPanel();
         iconLogo7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        noreaders = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         pnlPublisher = new javax.swing.JPanel();
         iconLogo8 = new javax.swing.JLabel();
@@ -675,9 +707,9 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel6.setText("Book Readers");
         pnlBorrower.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel7.setText("No. of Readers");
-        pnlBorrower.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+        noreaders.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        noreaders.setText("No. of Readers");
+        pnlBorrower.add(noreaders, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Ellipse 15.png"))); // NOI18N
         pnlBorrower.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 14, -1, -1));
@@ -983,7 +1015,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel5;
@@ -1006,6 +1037,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel lblUsername2;
     private javax.swing.JLabel lblUsername3;
     private javax.swing.JLabel lblUsername4;
+    private javax.swing.JLabel noreaders;
     private javax.swing.JPanel pnlAuthor;
     private javax.swing.JPanel pnlBookFeatured;
     private javax.swing.JPanel pnlBookFeatured4;

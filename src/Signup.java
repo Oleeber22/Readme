@@ -397,7 +397,7 @@ public int fetchUserID(String username) {
         } catch (SQLException ex) {
             Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         }
-        int userID = fetchUserID(username);
+     int userID = fetchUserID(username);
     if (userID != -1) {
         JOptionPane.showMessageDialog(this, "User ID: " + userID, "User ID", JOptionPane.INFORMATION_MESSAGE);
     } else {
